@@ -127,7 +127,11 @@ const fotosAmpliadas = {
   'Farmacias Catedral · San Bernardino 3': {photo:'farmacias-catedral-sanber-3-maps.jpg',photoAlt:'Fachada azul y blanca de Farmacias Catedral San Bernardino 3',photoCredit:'Farmacias Catedral San Bernardino 3 · Google Maps · jun 2025',photoSource:'https://www.google.com/maps?cid=2805054072795234501'},
   'Punto Farma · Naumann y Rosa Amendola': {photo:'punto-farma-naumann-amendola-maps.jpg',photoAlt:'Fachada iluminada de Punto Farma en Guillermo Naumann y Rosa Amendola',photoCredit:'Noe Mar · Google Maps · mar 2026',photoSource:'https://www.google.com/maps?cid=3341990120374303693'},
   'Punto Farma · zona MP7H': {photo:'punto-farma-mp7h-maps.jpg',photoAlt:'Fachada de Punto Farma en la zona MP7H',photoCredit:'El explorador · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=12789961892710106494'},
-  'Quiksilver': {photo:'quiksilver-sanber-maps.jpg',photoAlt:'Fachada de la tienda Quiksilver sobre Luis F. Vaché',photoCredit:'Quiksilver · Google Maps · dic 2025',photoSource:'https://www.google.com/maps?cid=5683215573869935570'}
+  'Quiksilver': {photo:'quiksilver-sanber-maps.jpg',photoAlt:'Fachada de la tienda Quiksilver sobre Luis F. Vaché',photoCredit:'Quiksilver · Google Maps · dic 2025',photoSource:'https://www.google.com/maps?cid=5683215573869935570'},
+  '4Pets Park · San Bernardino': {photo:'4pets-park-sanber-maps.jpg',photoAlt:'Entrada señalizada de 4Pets Park en San Bernardino',photoCredit:'4Pets Park - San Bernardino · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=3734355461490204659'},
+  'New Mambo': {photo:'new-mambo-maps.jpg',photoAlt:'Entrada iluminada de New Mambo durante la noche',photoCredit:'Mathias Zayas · Google Maps · sept 2026',photoSource:'https://www.google.com/maps?cid=7333282806138116960'},
+  'Bolocos Açai': {photo:'bolocos-acai-maps.jpg',photoAlt:'Fachada iluminada de Bolocos Açai en San Bernardino',photoCredit:'Fabian Gonzalez · Google Maps · sept 2022',photoSource:'https://www.google.com/maps?cid=6068387132578040230'},
+  'Häagen-Dazs San Bernardino': {photo:'haagen-dazs-sanber-maps.jpg',photoAlt:'Fachada blanca de Häagen-Dazs San Bernardino',photoCredit:'Häagen-Dazs San Bernardino · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=7147193129072533317'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
