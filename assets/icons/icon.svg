@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sol sobre el lago de San Bernardino">
+  <rect width="512" height="512" rx="112" fill="#183d49"/>
+  <g fill="none" stroke="#e8bb78" stroke-linecap="round" stroke-width="18">
+    <circle cx="256" cy="218" r="69"/>
+    <path d="M256 95v30M256 311v19M133 218h30M349 218h30M169 131l21 21M322 284l21 21M343 131l-21 21M190 284l-21 21"/>
+  </g>
+  <path d="M105 357c33-21 66-21 99 0s66 21 99 0 66-21 104 0" fill="none" stroke="#d9eeeb" stroke-linecap="round" stroke-width="24"/>
+  <path d="M105 405c33-21 66-21 99 0s66 21 99 0 66-21 104 0" fill="none" stroke="#8ac2c1" stroke-linecap="round" stroke-width="24"/>
+</svg>

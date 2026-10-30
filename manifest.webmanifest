@@ -1,0 +1,16 @@
+{
+  "id": "./",
+  "name": "San Bernardino",
+  "short_name": "San Ber",
+  "description": "Una guía local para descubrir San Bernardino, Paraguay.",
+  "lang": "es-PY",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf8ef",
+  "theme_color": "#183d49",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
