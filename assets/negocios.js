@@ -114,7 +114,15 @@ const fotosAmpliadas = {
   'San Cayetano Supermarket': {photo:'san-cayetano-supermarket-maps.jpg',photoAlt:'Fachada de San Cayetano Supermarket en la avenida Guillermo Naumann',photoCredit:'Denis Estigarribia · Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=18036708000741440136'},
   'Superseis San Bernardino': {photo:'superseis-san-bernardino-maps.jpg',photoAlt:'Fachada y estacionamiento de Superseis San Bernardino',photoCredit:'Blasida Cuquejo · Google Maps · jun 2026',photoSource:'https://www.google.com/maps?cid=278016002808102912'},
   'Veterinaria Busy': {photo:'veterinaria-busy-maps.jpg',photoAlt:'Área de artículos para mascotas en Veterinaria Busy',photoCredit:'Belen Marmol · Google Maps · jul 2022',photoSource:'https://www.google.com/maps?cid=4758229939989205067'},
-  'Vet Sanber': {photo:'vet-sanber-maps.jpg',photoAlt:'Fachada de Vet Sanber en Ciervo Cuá',photoCredit:'Vet Sanber · Google Maps · sept 2026',photoSource:'https://www.google.com/maps?cid=11761571838025201284'}
+  'Vet Sanber': {photo:'vet-sanber-maps.jpg',photoAlt:'Fachada de Vet Sanber en Ciervo Cuá',photoCredit:'Vet Sanber · Google Maps · sept 2026',photoSource:'https://www.google.com/maps?cid=11761571838025201284'},
+  'A Toda Huerta': {photo:'a-toda-huerta-maps.jpg',photoAlt:'Huerta y mesas al aire libre de A Toda Huerta',photoCredit:'Abdel Pérez · Google Maps · sept 2025',photoSource:'https://www.google.com/maps?cid=7124968286368465922'},
+  'Braten Todo a la Parrilla': {photo:'braten-parrilla-maps.jpg',photoAlt:'Fachada y cartel de Braten Todo a la Parrilla',photoCredit:'Jovina Romero · Google Maps · ago 2024',photoSource:'https://www.google.com/maps?cid=7872919227881892147'},
+  'Comedor Lago Azul': {photo:'comedor-lago-azul-maps.jpg',photoAlt:'Fachada con cartel de Comedor Lago Azul',photoCredit:'Jovina Romero · Google Maps · ago 2024',photoSource:'https://www.google.com/maps?cid=276632063558489514'},
+  'Comedor Terraza Del Lago': {photo:'comedor-terraza-del-lago-maps.jpg',photoAlt:'Entrada de madera y piedra de Comedor Terraza Del Lago',photoCredit:'Beatriz Jacquet · Google Maps · jul 2019',photoSource:'https://www.google.com/maps?cid=6848704673177731212'},
+  'Don Vito Original · Centro': {photo:'don-vito-centro-maps.png',photoAlt:'Productos de Don Vito Original mostrados por el negocio',photoCredit:'Don Vito ORIGINAL · Google Maps · jul 2019',photoSource:'https://www.google.com/maps?cid=9339697305701531080'},
+  'Casa Austria · Sucursal Pirayú-i': {photo:'casa-austria-pirayui-maps.jpg',photoAlt:'Fachada iluminada de Casa Austria, sucursal Pirayú-i',photoCredit:'Rafael Benitez · Google Maps · nov 2021',photoSource:'https://www.google.com/maps?cid=5625815801837519625'},
+  'Farmacenter San Bernardino 1': {photo:'farmacenter-san-bernardino-1-maps.jpg',photoAlt:'Fachada verde de Farmacenter San Bernardino 1',photoCredit:'Joacvaz · Google Maps · sept 2025',photoSource:'https://www.google.com/maps?cid=10792957187702188794'},
+  'Farmacias Catedral, suc. San Bernardino': {photo:'farmacias-catedral-sanber-maps.jpg',photoAlt:'Fachada azul de Farmacias Catedral en San Bernardino',photoCredit:'Farmacia Catedral · Google Maps · oct 2023',photoSource:'https://www.google.com/maps?cid=8846519064491099315'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
