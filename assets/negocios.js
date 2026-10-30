@@ -105,7 +105,8 @@ const fotosAmpliadas = {
   'Hotel y Casa Quinta Nilza Rinaldi': {photo:'hotel-nilza-rinaldi-senatur.jpg',photoAlt:'Parque y piscina del Hotel Nilza Rinaldi en San Bernardino',photoCredit:'SENATUR · ficha del Hotel Nilza Rinaldi',photoSource:'https://visitparaguay.travel/accommodations/hotel-nilza-rinaldi-1536'},
   'Cabañas Las Lupitas': {photo:'cabanas-las-lupitas-ruta.jpg',photoAlt:'Piscina iluminada de Cabañas Las Lupitas',photoCredit:'Gabriela González Frias · Google Maps, vía Ruta Paraguaya',photoSource:'https://rutaparaguaya.com/lugar/cabanas-las-lupitas-4350/'},
   'Cabaña de la Cascada': {photo:'cabana-de-la-cascada-ruta.jpg',photoAlt:'Cabañas entre árboles de Cabaña de la Cascada',photoCredit:'Cabaña de la Cascada · Google Maps, vía Ruta Paraguaya',photoSource:'https://rutaparaguaya.com/lugar/cabana-de-la-cascada-4348/'},
-  'Cabaña Susana': {photo:'cabana-susana-ruta.jpg',photoAlt:'Jardín de Cabaña Susana',photoCredit:'Miguel Ingles PestanA · Google Maps, vía Ruta Paraguaya',photoSource:'https://rutaparaguaya.com/lugar/cabana-susana-4346/'}
+  'Cabaña Susana': {photo:'cabana-susana-ruta.jpg',photoAlt:'Jardín de Cabaña Susana',photoCredit:'Miguel Ingles PestanA · Google Maps, vía Ruta Paraguaya',photoSource:'https://rutaparaguaya.com/lugar/cabana-susana-4346/'},
+  'Rode Coiffure': {photo:'rode-coiffure-maps.jpg',photoAlt:'Interior y puestos de trabajo de Rode Coiffure en San Bernardino',photoCredit:'Rode Coiffure · Google Maps · feb 2022',photoSource:'https://www.google.com/maps/place/Rode+Coiffure%F0%9F%92%87/data=!4m7!3m6!1s0x945db5fce90fab91:0x553f989f21671986!8m2!3d-25.3035302!4d-57.292757!16s%2Fg%2F11gd30cpv3'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
