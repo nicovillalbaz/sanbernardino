@@ -3,7 +3,6 @@
   const canvas = document.getElementById('mapa-city');
   const detail = document.getElementById('mapa-detail');
   const count = document.getElementById('mapa-count');
-  const search = document.getElementById('mapa-search');
   const select = document.getElementById('mapa-detail-filter');
   const filters = document.getElementById('mapa-filters');
   if (!canvas || !window.L || !Array.isArray(lugaresMapa)) return;
@@ -23,8 +22,7 @@
     {key:'hogar',label:'Hogar',icon:'⌂'},
     {key:'servicios',label:'Servicios',icon:'⚙',details:[['imprentas','Imprentas'],['lavanderias','Lavanderías'],['formacion','Formación'],['bancos','Bancos y giros'],['cajeros','Cajeros'],['eventos','Eventos']]},
     {key:'movilidad',label:'Movilidad',icon:'↗',details:[['estaciones','Estaciones de servicio'],['talleres','Talleres y gomerías'],['lavaderos','Lavaderos'],['repuestos','Repuestos']]},
-    {key:'inmuebles',label:'Vivir',icon:'⌑',details:[['inmobiliarias','Inmobiliarias'],['barrios','Barrios cerrados'],['loteamientos','Loteamientos']]},
-    {key:'cerca',label:'Cerca de San Ber',icon:'◎'}
+    {key:'inmuebles',label:'Vivir',icon:'⌑',details:[['inmobiliarias','Inmobiliarias'],['barrios','Barrios cerrados'],['loteamientos','Loteamientos']]}
   ];
   const byKey = Object.fromEntries(groups.map(group => [group.key,group]));
   const locationFromUrl = url => {
@@ -57,12 +55,11 @@
   let activeGroup = 'todos';
   let activeDetail = '';
   let selectedPoint = null;
-  const normalize = value => String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('es-PY');
-
   function closeDetail() { detail.hidden = true; detail.replaceChildren(); selectedPoint = null; }
   function showDetail(point) {
     selectedPoint = point;
     detail.replaceChildren();
+    detail.classList.toggle('has-photo',Boolean(point.photo));
     const close = document.createElement('button'); close.type='button'; close.className='mapa-detail-close'; close.textContent='×'; close.setAttribute('aria-label','Cerrar ficha'); close.addEventListener('click',closeDetail);
     detail.append(close);
     if (point.photo) {
@@ -74,13 +71,15 @@
       detail.append(figure);
     }
     const body = document.createElement('div'); body.className='mapa-detail-body';
+    if(point.nearby){const badge=document.createElement('span');badge.className='mapa-nearby-label';badge.textContent='Cerca de San Ber';body.append(badge)}
     const type=document.createElement('span');type.className='mapa-detail-type';type.textContent=point.kind==='lugar'?'LUGAR · '+point.type:point.type;
     const title=document.createElement('h2');title.textContent=point.name;
-    const area=document.createElement('p');area.textContent=point.kind==='lugar'?'San Bernardino':point.area;
+    const area=document.createElement('p');area.textContent=point.kind==='lugar'?'San Bernardino':point.nearby?point.area.replace(/^Cerca de San Ber\s*·\s*/,''):point.area;
     body.append(type,title,area);
-    if(point.phone){const phone=document.createElement('a');const digits=point.phone.replace(/\D/g,'');phone.href='tel:'+(digits.startsWith('595')?'+':'')+(digits.startsWith('595')?digits:'+595'+(digits.startsWith('0')?digits.slice(1):digits));phone.textContent='Llamar · '+point.phone;body.append(phone)}
-    const maps=document.createElement('a');maps.href=point.maps||point.source;maps.textContent='Abrir ubicación en Maps ↗';maps.target='_blank';maps.rel='noopener noreferrer';body.append(maps);
-    detail.append(body);detail.hidden=false;
+    const actions=document.createElement('div');actions.className='mapa-detail-actions';
+    if(point.phone){const phone=document.createElement('a');const digits=point.phone.replace(/\D/g,'');phone.href='tel:'+(digits.startsWith('595')?'+':'')+(digits.startsWith('595')?digits:'+595'+(digits.startsWith('0')?digits.slice(1):digits));phone.textContent='Llamar · '+point.phone;actions.append(phone)}
+    const maps=document.createElement('a');maps.href=point.maps||point.source;maps.textContent='Ver en Maps ↗';maps.target='_blank';maps.rel='noopener noreferrer';actions.append(maps);
+    detail.append(body,actions);detail.hidden=false;
   }
   function makeMarker(point) {
     const kind = point.kind==='lugar'?'lugar':point.category;
@@ -97,19 +96,17 @@
     select.disabled=select.options.length===1;
   }
   function updateButtons(){for(const button of filters.querySelectorAll('button')){const active=button.dataset.group===activeGroup;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active))}}
-  function matches(point,query){
+  function matches(point){
     if(activeGroup==='lugares' && point.kind!=='lugar')return false;
-    if(activeGroup==='cerca' && (point.kind!=='negocio'||!point.nearby))return false;
-    if(!['todos','lugares','cerca'].includes(activeGroup) && point.category!==activeGroup)return false;
+    if(!['todos','lugares'].includes(activeGroup) && point.category!==activeGroup)return false;
     if(activeDetail){
       if(point.kind==='lugar' && point.group!==activeDetail)return false;
       if(point.kind==='negocio' && !detailedBusinessFilters[activeDetail]?.(point))return false;
     }
-    return !query || normalize(`${point.name} ${point.type} ${point.area||''}`).includes(query);
+    return true;
   }
   function render({focus=false}={}){
-    const query=normalize(search.value.trim());
-    const shown=points.filter(point=>matches(point,query));
+    const shown=points.filter(matches);
     markers.clearLayers();markers.addLayers(shown.map(makeMarker));
     count.textContent=`${shown.length} ${shown.length===1?'punto':'puntos'} en el mapa`;
     if(selectedPoint && !shown.includes(selectedPoint))closeDetail();
@@ -120,8 +117,8 @@
   }
   for(const group of groups){const button=document.createElement('button');button.type='button';button.dataset.group=group.key;button.textContent=`${group.icon} ${group.label}`;button.addEventListener('click',()=>{activeGroup=group.key;activeDetail='';updateButtons();updateOptions();render({focus:true})});filters.append(button)}
   select.addEventListener('change',()=>{activeDetail=select.value;render({focus:true})});
-  search.addEventListener('input',()=>render({focus:search.value.trim().length>2}));
   map.on('click',closeDetail);
+  new IntersectionObserver(entries => { if (!entries[0].isIntersecting) closeDetail(); }).observe(canvas);
   updateButtons();updateOptions();render();
   window.addEventListener('resize',()=>map.invalidateSize());
 })();

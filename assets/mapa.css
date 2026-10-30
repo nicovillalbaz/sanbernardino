@@ -3,12 +3,13 @@
 .mapa-head .eyebrow{margin:0 0 .6rem}
 .mapa-head h1{font-size:clamp(2.65rem,5.2vw,5.8rem);letter-spacing:-.055em;margin:0 0 .5rem}
 .mapa-head p:last-child{font-size:clamp(.83rem,1.2vw,1rem);color:var(--body);margin:0}
-.mapa-filter-strip{display:flex;gap:.45rem;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x proximity;scrollbar-width:thin;padding:.25rem 0 .8rem}
+.mapa-filter-strip{display:flex;gap:.45rem;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x proximity;scrollbar-width:none;padding:.25rem 0 .8rem}
+.mapa-filter-strip::-webkit-scrollbar{display:none}
 .mapa-filter-strip button{flex:none;scroll-snap-align:start;border:1px solid #b8c5bf;border-radius:100px;background:#fffdf6;color:#193e49;min-height:44px;padding:.55rem .9rem;font:.7rem var(--sans);font-weight:700;white-space:nowrap;cursor:pointer}
 .mapa-filter-strip button:hover,.mapa-filter-strip button.active{background:#153e49;border-color:#153e49;color:#fff}
-.mapa-filter-strip button:focus-visible,.mapa-toolbar input:focus-visible,.mapa-toolbar select:focus-visible{outline:3px solid #bd4d45;outline-offset:2px}
-.mapa-toolbar{display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,260px) auto;gap:.65rem;align-items:center;padding:.35rem 0 1rem}
-.mapa-toolbar input,.mapa-toolbar select{min-width:0;width:100%;height:44px;background:#fffdf6;border:1px solid #b8c5bf;border-radius:4px;padding:0 .8rem;color:#193e49;font:.8rem var(--sans)}
+.mapa-filter-strip button:focus-visible,.mapa-toolbar select:focus-visible{outline:3px solid #bd4d45;outline-offset:2px}
+.mapa-toolbar{display:flex;justify-content:space-between;gap:.65rem;align-items:center;padding:.35rem 0 1rem}
+.mapa-toolbar select{min-width:0;width:min(100%,300px);height:44px;background:#fffdf6;border:1px solid #b8c5bf;border-radius:4px;padding:0 .8rem;color:#193e49;font:.8rem var(--sans)}
 .mapa-toolbar select:disabled{color:#7a8b88;background:#e9ebe6}
 .mapa-toolbar p{margin:0;color:#485f61;font-size:.73rem;font-weight:700;white-space:nowrap;text-align:right}
 .mapa-stage{position:relative;border:1px solid #b8c5bf;background:#d9e8e5;overflow:hidden;box-shadow:0 18px 40px #173e4b16}
@@ -36,12 +37,38 @@
 .mapa-detail-image{position:relative;margin:0;height:170px;background:#d9e8e5}
 .mapa-detail-image img{width:100%;height:100%;object-fit:cover}
 .mapa-photo-credit{position:absolute;left:.5rem;right:.5rem;bottom:.5rem;background:#102f39e8;color:#fff;padding:.35rem .5rem;font-size:.62rem}
-.mapa-detail-body{padding:1rem 1.1rem 1.2rem}
+.mapa-detail-body{padding:1rem 1.1rem .65rem}
 .mapa-detail-type{text-transform:uppercase;letter-spacing:.12em;color:#ad4e49;font-size:.6rem;font-weight:700}
+.mapa-nearby-label{display:table;margin:0 0 .45rem;padding:.3rem .5rem;border:1px solid #c6d2ca;border-radius:100px;background:#e9f0e9;color:#173e49;font-size:.6rem;font-weight:800;line-height:1.2}
 .mapa-detail-body h2{font:clamp(1.6rem,2.5vw,2.2rem)/1.05 var(--serif);margin:.4rem 0}
 .mapa-detail-body p{font-size:.72rem;color:#52696d;margin:0}
-.mapa-detail-body a{display:inline-block;border:1px solid #bbc9c1;border-radius:100px;padding:.42rem .7rem;margin-top:.8rem;font-size:.7rem;font-weight:700}
+.mapa-detail-actions{display:flex;flex-wrap:wrap;gap:.4rem;padding:0 1.1rem 1.1rem}
+.mapa-detail-actions a{display:inline-flex;align-items:center;min-height:36px;border:1px solid #bbc9c1;border-radius:100px;padding:.4rem .7rem;font-size:.7rem;font-weight:700;white-space:nowrap}
 .mapa-foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0 0;color:#52696d;font-size:.72rem}
 .mapa-foot a{font-weight:700;text-decoration:underline;text-underline-offset:2px}
-@media(max-width:760px){.mapa-page{padding-bottom:2rem}.mapa-head{padding:1.6rem 0 1rem}.mapa-head h1{font-size:clamp(2.45rem,10vw,4rem)}.mapa-toolbar{grid-template-columns:1fr 1fr;gap:.5rem}.mapa-toolbar input{grid-column:1/-1}.mapa-toolbar p{text-align:right;white-space:normal}.mapa-map{height:clamp(360px,calc(100dvh - 290px),650px)}.mapa-detail{left:10px;right:10px;bottom:10px;width:auto;max-height:55%;display:grid;grid-template-columns:35% minmax(0,1fr)}.mapa-detail-image{height:100%;min-height:135px}.mapa-detail-body{padding:.8rem 2.3rem .8rem .8rem}.mapa-detail-body h2{font-size:1.5rem}.mapa-detail-close{top:.4rem;right:.4rem}.mapa-foot{display:block}.mapa-foot a{display:block;margin-top:.3rem}}
-@media(max-width:390px){.mapa-toolbar{grid-template-columns:1fr}.mapa-toolbar input{grid-column:auto}.mapa-toolbar p{text-align:left}.mapa-map{height:calc(100dvh - 300px);min-height:350px}.mapa-detail{grid-template-columns:32% minmax(0,1fr)}.mapa-detail-body h2{font-size:1.25rem}}
+@media(max-width:760px){
+  .mapa-page{padding-bottom:2rem}
+  .mapa-head{padding:1.6rem 0 1rem}
+  .mapa-head h1{font-size:clamp(2.45rem,10vw,4rem)}
+  .mapa-toolbar p{white-space:normal}
+  .mapa-map{height:clamp(360px,calc(100dvh - 250px),650px)}
+  .mapa-detail{position:fixed;z-index:90;left:14px;right:14px;bottom:calc(75px + env(safe-area-inset-bottom));width:auto;max-width:420px;max-height:none;margin-inline:auto;overflow:visible;display:block}
+  .mapa-detail.has-photo{display:grid;grid-template-columns:96px minmax(0,1fr)}
+  .mapa-detail-image{grid-column:1;grid-row:1;height:100%;min-height:112px}
+  .mapa-photo-credit{left:.2rem;right:.2rem;bottom:.2rem;padding:.2rem;font-size:.5rem;line-height:1.15}
+  .mapa-detail-body{grid-column:2;grid-row:1;min-width:0;padding:.75rem 2.5rem .5rem .8rem}
+  .mapa-detail:not(.has-photo) .mapa-detail-body{padding:.85rem 2.5rem .5rem .9rem}
+  .mapa-detail-body h2{font-size:clamp(1.2rem,5vw,1.5rem);overflow-wrap:break-word}
+  .mapa-detail-actions{grid-column:1/-1;gap:.4rem;padding:.55rem .7rem .7rem;border-top:1px solid #e2e8e1}
+  .mapa-detail-actions a{min-height:36px;font-size:.68rem}
+  .mapa-detail-close{top:.4rem;right:.4rem}
+  .mapa-foot{display:block}
+  .mapa-foot a{display:block;margin-top:.3rem}
+}
+@media(max-width:390px){
+  .mapa-toolbar{align-items:flex-start;flex-direction:column;gap:.35rem}
+  .mapa-toolbar select{width:100%}
+  .mapa-toolbar p{text-align:left}
+  .mapa-map{height:calc(100dvh - 270px);min-height:380px}
+  .mapa-detail.has-photo{grid-template-columns:88px minmax(0,1fr)}
+}

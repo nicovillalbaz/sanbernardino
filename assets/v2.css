@@ -55,6 +55,7 @@
 .business-visual{height:190px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(125deg,#c9d9d4,#e4e0d0);color:#1d4950}
 .business-visual:before{content:"";position:absolute;inset:16px;border:1px solid #ffffff90;pointer-events:none}
 .business-visual img{width:100%;height:100%;object-fit:cover}
+.business-nearby-label{position:absolute;z-index:3;top:.65rem;left:.65rem;padding:.35rem .55rem;background:#fffdf6;color:#173e49;border:1px solid #c6d2ca;border-radius:100px;font-size:.62rem;font-weight:800;line-height:1.2;box-shadow:0 2px 8px #173e4b25}
 .business-visual.business-visual-maps{height:240px}
 .maps-photo-credit{position:absolute;right:.65rem;bottom:.6rem;left:.65rem;z-index:2;padding:.4rem .55rem;background:#102f39e8;color:#fff;font-size:12px;font-weight:600;line-height:1.35;text-align:left;text-decoration:none;box-shadow:0 1px 8px #0005}
 .maps-photo-credit:hover,.maps-photo-credit:focus-visible{color:#fff;text-decoration:underline;text-underline-offset:2px}

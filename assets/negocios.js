@@ -100,7 +100,6 @@ for(const item of businesses){
 }
 
 const businessGrid = document.getElementById('business-grid');
-const businessSearch = document.getElementById('business-search');
 const businessCount = document.getElementById('business-count');
 const businessEmpty = document.getElementById('business-empty');
 const businessFilters = [...document.querySelectorAll('[data-business-filter]')];
@@ -156,12 +155,11 @@ const detailedBusinessFilters = {
   formacion: item => item.tags.includes('formacion'),
   bancos: item => item.tags.includes('bancos'),
   cajeros: item => item.tags.includes('cajeros'),
-  eventos: item => item.tags.includes('eventos'),
-  cerca: item => item.nearby
+  eventos: item => item.tags.includes('eventos')
 };
 const requestedBusinessFilter = new URLSearchParams(window.location.search).get('rubro');
 const requestedBusinessName = new URLSearchParams(window.location.search).get('negocio');
-if (requestedBusinessName && businesses.some(item => !item.inactive && item.name === requestedBusinessName)) businessSearch.value = requestedBusinessName;
+let activeBusinessName = requestedBusinessName && businesses.some(item => !item.inactive && item.name === requestedBusinessName) ? requestedBusinessName : '';
 let activeBusinessFilter = businessFilters.some(button => button.dataset.businessFilter === requestedBusinessFilter) || requestedBusinessFilter in detailedBusinessFilters ? requestedBusinessFilter : 'todos';
 businessFilters.forEach(button => {
   const selected = button.dataset.businessFilter === activeBusinessFilter;
@@ -169,7 +167,6 @@ businessFilters.forEach(button => {
   button.setAttribute('aria-pressed', String(selected));
 });
 
-function normalizeBusiness(value){return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('es-PY')}
 function addBusinessLink(parent, label, href, external=false){
   const link=document.createElement('a');
   link.textContent=label;
@@ -178,14 +175,14 @@ function addBusinessLink(parent, label, href, external=false){
   parent.append(link);
 }
 function renderBusinesses(){
-  if(!businessGrid || !businessSearch || !businessCount || !businessEmpty) return;
-  const query=normalizeBusiness(businessSearch.value.trim());
-  const shown=businesses.filter(item => !item.inactive && (activeBusinessFilter==='todos'||item.category===activeBusinessFilter||detailedBusinessFilters[activeBusinessFilter]?.(item)) && normalizeBusiness(`${item.name} ${item.type} ${item.area}`).includes(query)).sort((a,b)=>businessCategoryOrder.indexOf(a.category)-businessCategoryOrder.indexOf(b.category) || Number(Boolean(b.photo))-Number(Boolean(a.photo)) || a.name.localeCompare(b.name,'es-PY'));
+  if(!businessGrid || !businessCount || !businessEmpty) return;
+  const shown=businesses.filter(item => !item.inactive && (activeBusinessFilter==='todos'||item.category===activeBusinessFilter||detailedBusinessFilters[activeBusinessFilter]?.(item)) && (!activeBusinessName || item.name===activeBusinessName)).sort((a,b)=>businessCategoryOrder.indexOf(a.category)-businessCategoryOrder.indexOf(b.category) || Number(Boolean(b.photo))-Number(Boolean(a.photo)) || a.name.localeCompare(b.name,'es-PY'));
   const fragment=document.createDocumentFragment();
   shown.forEach(item=>{
     const card=document.createElement('article');card.className='business-card';
     card.dataset.category=item.category;
     const visual=document.createElement('div');visual.className='business-visual';
+    if(item.nearby){const badge=document.createElement('span');badge.className='business-nearby-label';badge.textContent='Cerca de San Ber';visual.append(badge)}
     if(item.photo){
       const img=document.createElement('img');img.src=item.photo;img.alt=item.photoAlt||`${item.name}, fotografía de su edificio`;img.loading='lazy';if(item.photoPosition)img.style.objectPosition=item.photoPosition;visual.append(img);
       if(item.photoCredit && item.photoSource?.includes('google.com/maps')){
@@ -202,7 +199,7 @@ function renderBusinesses(){
     const type=document.createElement('span');type.className='business-type';type.textContent=item.type;
     top.append(type);
     const title=document.createElement('h3');title.textContent=item.name;
-    const area=document.createElement('p');area.className='business-area';area.textContent=item.area;
+    const area=document.createElement('p');area.className='business-area';area.textContent=item.nearby?item.area.replace(/^Cerca de San Ber\s*·\s*/,''):item.area;
     const description=item.description?document.createElement('p'):null;
     if(description){description.className='business-description';description.textContent=item.description}
     const actions=document.createElement('div');actions.className='business-actions';
@@ -218,15 +215,15 @@ function renderBusinesses(){
   businessGrid.replaceChildren(fragment);
   businessCount.textContent=`${shown.length} ${shown.length===1?'lugar':'lugares'} · ${businesses.filter(item => !item.inactive).length} en el directorio`;
   businessEmpty.hidden=shown.length!==0;
-  if(!shown.length) businessEmpty.textContent='Probá otra categoría o buscá por nombre.';
+  if(!shown.length) businessEmpty.textContent='Probá otra categoría.';
 }
-businessSearch?.addEventListener('input',renderBusinesses);
 function scrollToBusinessResults(){
   if(!businessCount) return;
   const behavior=window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';
   businessCount.scrollIntoView({behavior,block:'start'});
 }
 businessFilters.forEach(button=>button.addEventListener('click',()=>{
+  activeBusinessName='';
   activeBusinessFilter=button.dataset.businessFilter;
   businessFilters.forEach(item=>{const selected=item===button;item.classList.toggle('active',selected);item.setAttribute('aria-pressed',String(selected))});
   renderBusinesses();
@@ -234,10 +231,11 @@ businessFilters.forEach(button=>button.addEventListener('click',()=>{
 }));
 document.querySelectorAll('[data-rubro]').forEach(link => link.addEventListener('click', event => {
   event.preventDefault();
+  activeBusinessName='';
   activeBusinessFilter=link.dataset.rubro;
   businessFilters.forEach(item=>{const selected=item.dataset.businessFilter===activeBusinessFilter;item.classList.toggle('active',selected);item.setAttribute('aria-pressed',String(selected))});
   renderBusinesses();
   scrollToBusinessResults();
 }));
 renderBusinesses();
-if (requestedBusinessName && businessSearch.value) businessGrid?.querySelector('.business-card')?.scrollIntoView({behavior:'auto',block:'center'});
+if (activeBusinessName) businessGrid?.querySelector('.business-card')?.scrollIntoView({behavior:'auto',block:'center'});
