@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es-PY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183d49">
+  <meta name="description" content="Explorá San Bernardino en un mapa interactivo de lugares y negocios locales.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="San Bernardino">
+  <title>Mapa · San Bernardino</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/v2.css">
+  <link rel="stylesheet" href="assets/vendor/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/vendor/markercluster/MarkerCluster.css">
+  <link rel="stylesheet" href="assets/mapa.css">
+  <script src="assets/install.js" defer></script>
+  <script src="assets/app.js?v=28" defer></script>
+  <script src="assets/catalogo-ampliado.js?v=28" defer></script>
+  <script src="assets/catalogo-revision.js?v=28" defer></script>
+  <script src="assets/catalogo-rubros.js?v=28" defer></script>
+  <script src="assets/catalogo-zonas.js?v=28" defer></script>
+  <script src="assets/negocios.js?v=28" defer></script>
+  <script src="assets/mapa-lugares.js?v=28" defer></script>
+  <script src="assets/mapa-coordenadas.js?v=28" defer></script>
+  <script src="assets/vendor/leaflet/dist/leaflet.js" defer></script>
+  <script src="assets/vendor/markercluster/leaflet.markercluster.js" defer></script>
+  <script src="assets/mapa.js?v=28" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <div class="topline"><span>PARAGUAY · CORDILLERA</span><span>Explorá la ciudad de cerca</span><span>MAPA</span></div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="San Bernardino, volver al inicio"><span class="wordmark-star">✳</span><span>SAN<br>BERNARDINO</span></a>
+    <nav class="main-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="actividades.html">Actividades</a><a href="lugares.html">Lugares</a><a href="negocios.html">Negocios y profesionales</a><a href="mapa.html" aria-current="page">Mapa</a></nav>
+  </header>
+  <main class="mapa-page" id="contenido">
+    <div class="wrap">
+      <div class="mapa-head"><p class="eyebrow">Descubrí San Ber</p><h1>Toda la ciudad, <em>a la vista.</em></h1><p>Acercá el mapa, movelo y tocá un punto para conocerlo.</p></div>
+      <div class="mapa-filter-strip" id="mapa-filters" role="group" aria-label="Filtrar puntos del mapa"></div>
+      <div class="mapa-toolbar"><input id="mapa-search" type="search" placeholder="Buscar un lugar o negocio" aria-label="Buscar un lugar o negocio" autocomplete="off"><select id="mapa-detail-filter" aria-label="Filtrar por rubro específico"></select><p id="mapa-count" aria-live="polite"></p></div>
+      <div class="mapa-stage"><div class="mapa-map" id="mapa-city" role="application" aria-label="Mapa interactivo de San Bernardino y alrededores cercanos"></div><aside class="mapa-detail" id="mapa-detail" aria-label="Ficha del punto seleccionado" hidden></aside></div>
+      <div class="mapa-foot"><span>Mapa de San Bernardino y su entorno cercano · © OpenStreetMap contributors</span><a href="negocios.html">Explorar todas las fichas del directorio ↗</a></div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-main"><div><span class="footer-mark">SAN<br>BERNARDINO<span class="asterisk">✳</span></span><p>Una guía local, hecha para mirar la ciudad con tiempo.</p></div><div class="footer-links"><a href="index.html">Inicio</a><a href="actividades.html">Actividades</a><a href="lugares.html">Lugares</a><a href="negocios.html">Negocios</a><a href="creditos.html">Fuentes y créditos</a></div></div><div class="wrap footer-bottom"><span>© <span id="year">2026</span> · San Bernardino, Paraguay</span><div class="signature"><span>Creado por <strong>NAVZ</strong> · <a href="tel:+595972995557">+595 972 995 557</a></span><span>Impulsado por: <strong>Oiko San Ber</strong></span></div></div></footer>
+</body>
+</html>

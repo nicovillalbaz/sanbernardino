@@ -1,8 +1,9 @@
-const CACHE_NAME = 'san-bernardino-v26';
+const CACHE_NAME = 'san-bernardino-v28';
 const APP_FILES = [
-  'index.html', 'actividades.html', 'lugares.html', 'negocios.html',
+  'index.html', 'actividades.html', 'lugares.html', 'negocios.html', 'mapa.html',
   'historia.html', 'creditos.html', 'manifest.webmanifest',
-  'assets/styles.css', 'assets/v2.css', 'assets/app.js',
+  'assets/styles.css', 'assets/v2.css', 'assets/app.js', 'assets/mapa.css', 'assets/mapa.js', 'assets/mapa-lugares.js', 'assets/mapa-coordenadas.js',
+  'assets/vendor/leaflet/dist/leaflet.css', 'assets/vendor/leaflet/dist/leaflet.js', 'assets/vendor/markercluster/MarkerCluster.css', 'assets/vendor/markercluster/leaflet.markercluster.js',
   'assets/agenda.js', 'assets/negocios.js',
   'assets/catalogo-ampliado.js', 'assets/catalogo-revision.js', 'assets/catalogo-rubros.js', 'assets/catalogo-zonas.js', 'assets/creditos-negocios.js',
   'assets/icons/icon-192.png', 'assets/icons/icon-512.png'
