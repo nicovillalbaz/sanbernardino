@@ -26,7 +26,7 @@
   ];
   const byKey = Object.fromEntries(groups.map(group => [group.key,group]));
   const locationFromUrl = url => {
-    const match = url?.match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/);
+    const match = url?.match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/) || url?.match(/[?&]q=loc:(-?\d+\.\d+),(-?\d+\.\d+)/);
     const cid = url?.match(/[?&]cid=(\d+)/)?.[1];
     const saved = cid && coordenadasMapa[cid];
     if (!match && !saved) return null;
