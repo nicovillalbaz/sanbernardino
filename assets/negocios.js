@@ -99,7 +99,8 @@ const fotosAmpliadas = {
   'Condominio Puntasánber': {photo:'condominio-puntasanber-infocasas.jpg',photoAlt:'Entrada señalizada del Condominio Punta SanBer',photoCredit:'InfoCasas · foto de la ficha de Punta SanBer',photoSource:'https://www.infocasas.com.py/vendo-terreno-en-condominio-punta-sanber/193238676'},
   'Condominio Ayres de Sanber': {photo:'condominio-ayres-sanber-infocasas.jpg',photoAlt:'Portería señalizada del Condominio Ayres de Sanber',photoCredit:'InfoCasas · foto de la ficha de Ayres de Sanber',photoSource:'https://www.infocasas.com.py/vendo-terreno-en-condominio-ayres-de-sanber/192440520'},
   'Alta Pietra Barrio Privado': {photo:'alta-pietra-infocasas.jpg',photoAlt:'Acceso con cartel de Alta Pietra Barrio Privado',photoCredit:'InfoCasas · foto de la ficha de Alta Pietra',photoSource:'https://www.infocasas.com.py/vendo-amplio-terreno-en-condominio-alta-pietra/193315033'},
-  'Condominio Petrohué': {photo:'petrohue-infocasas.jpg',photoAlt:'Edificio común y cancha del Condominio Petrohué',photoCredit:'InfoCasas · foto de la ficha de Petrohué',photoSource:'https://www.infocasas.com.py/terreno-en-condominio-petrohue-san-bernardino-lote-3/193167172'}
+  'Condominio Petrohué': {photo:'petrohue-infocasas.jpg',photoAlt:'Edificio común y cancha del Condominio Petrohué',photoCredit:'InfoCasas · foto de la ficha de Petrohué',photoSource:'https://www.infocasas.com.py/terreno-en-condominio-petrohue-san-bernardino-lote-3/193167172'},
+  'Asismed San Ber': {photo:'asismed-sanber-infonegocios.webp',photoAlt:'Centro médico estacional Asismed San Ber y ambulancia fotografiados en 2023',photoCredit:'InfoNegocios Paraguay · fotografía publicada en 2023',photoSource:'https://infonegocios.com.py/minuto-salud/verano-con-salud-centro-medico-asismed-san-ber-atendera-por-tercer-ano-consecutivo'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
