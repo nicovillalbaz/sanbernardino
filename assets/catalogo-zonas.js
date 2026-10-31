@@ -180,7 +180,7 @@ catalogoZonas.push(
   {name:'TED-Wepa · Farmacenter',category:'servicios',type:'Cajero automático',area:'Luis F. Vaché · Emilio Hassler',tags:['cajeros'],phone:'(021) 618 8003',maps:mapaCid('0x2bc59646f02c54ad')},
   {name:'TED-Wepa · Biggie Lago Azul',category:'servicios',type:'Cajero automático',area:'Lago Azul',tags:['cajeros'],phone:'(021) 618 8003',maps:mapaCid('0xbd7b894432c483ff')},
   {name:'MoneyGram · San Bernardino',category:'servicios',type:'Transferencias de dinero',area:'Avenida Kennedy',tags:['bancos'],phone:'0991 828203',maps:mapaCid('0xc0ea7a896be50998')},
-  {name:'Es Vedrá San Bernardino',category:'servicios',type:'Salón de eventos',area:'Zona QM3P',tags:['eventos'],phone:'0982 272328',maps:mapaCid('0xb1637febc95125f7')},
+  {name:'Es Vedrá San Bernardino',category:'servicios',type:'Salón de eventos',area:'Ciervo Cuá',tags:['eventos'],phone:'0982 272328',maps:mapaCid('0xb1637febc95125f7')},
   {name:'Cerca del Cielo',category:'servicios',type:'Salón de eventos',area:'Carlos Antonio López',tags:['eventos'],phone:'(021) 326 9695',maps:mapaCid('0xaaceea90494a7563')},
   {name:'Servicio de Alquileres La Candelaria',category:'servicios',type:'Organización de eventos',area:'Brisas del Lago',tags:['eventos'],phone:'0981 179265',maps:mapaCid('0xbb64d632886f9851')},
   {name:'Atenas Cotillón',category:'compras',type:'Cotillón y fiestas infantiles',area:'Avenida Guillermo Naumann',tags:['tiendas'],phone:'0994 650145',maps:mapaCid('0x8ca1fdbf22262d02')},
