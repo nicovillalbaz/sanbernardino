@@ -7,7 +7,7 @@
   for (const item of entries) {
     const row = document.createElement('li');
     const name = document.createElement('strong');
-    name.textContent = item.name;
+    name.textContent = publicBusinessText(item.name);
     row.append(name, ' · ');
     if (item.source) {
       const source = document.createElement('a');

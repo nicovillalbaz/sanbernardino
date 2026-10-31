@@ -31,6 +31,11 @@ const businesses = [
 ];
 
 businesses.push(...catalogoAmpliado, ...catalogoRevision, ...catalogoRubros, ...catalogoZonas);
+function publicBusinessText(value) {
+  return String(value || '')
+    .replace(/\ben la zona\s+[23456789CFGHJMPQRVWX]{3,4}(?:\+[23456789CFGHJMPQRVWX]{2,3})?\b/gi, 'en San Bernardino')
+    .replace(/\bzona\s+[23456789CFGHJMPQRVWX]{3,4}(?:\+[23456789CFGHJMPQRVWX]{2,3})?\b/gi, 'San Bernardino');
+}
 const negociosOcultos = new Set([
   'Despensa Karina', 'Bodega Boutique San Bernardino',
   'Cangre Burger', 'Don Vito Original · Vaché', 'Yogurberry San Bernardino',
@@ -139,7 +144,9 @@ const fotosAmpliadas = {
   'La Casita Helados · Naumann': {photo:'la-casita-helados-naumann-maps.jpg',photoAlt:'Terraza nocturna de La Casita Helados en la zona de Naumann',photoCredit:'VIVIAN GONZALEZ FRUTOS · Google Maps · ago 2025',photoSource:'https://www.google.com/maps?cid=2687581473451969676'},
   'Heladería París · S6': {photo:'heladeria-paris-s6-maps.jpg',photoAlt:'Mostrador y cartel de Heladería París junto a Superseis',photoCredit:'Bruno Benitez · Google Maps · ago 2021',photoSource:'https://www.google.com/maps?cid=16495325478332475016'},
   'Bodega Multitragos': {photo:'bodega-multitragos-maps.jpg',photoAlt:'Fachada de Bodega Multitragos sobre Luis F. Vaché',photoCredit:'Jovina Romero · Google Maps · may 2019',photoSource:'https://www.google.com/maps?cid=11962483207013776516'},
-  'El Quijote': {photo:'el-quijote-libreria-maps.jpg',photoAlt:'Fachada de la librería El Quijote sobre Santiago Schaerer',photoCredit:'Araceli Britos · Google Maps · feb 2025',photoSource:'https://www.google.com/maps?cid=925294166508876942'}
+  'El Quijote': {photo:'el-quijote-libreria-maps.jpg',photoAlt:'Fachada de la librería El Quijote sobre Santiago Schaerer',photoCredit:'Araceli Britos · Google Maps · feb 2025',photoSource:'https://www.google.com/maps?cid=925294166508876942'},
+  'La Pizzería La Italiana': {photo:'pizzeria-la-italiana-maps.jpg',photoAlt:'Fachada y cartel de La Pizzería La Italiana',photoCredit:'Virginia Lacasa · Google Maps · abr 2026',photoSource:'https://www.google.com/maps/place/La+Pizzeria+La+Italiana/data=!4m7!3m6!1s0x945db5f45cafc5dd:0xc0212377d99ee727!8m2!3d-25.3085969!4d-57.294581!16s%2Fg%2F11scysl65c'},
+  'La Pizzería Ni Ahí Estoy': {photo:'pizzeria-ni-ahi-estoy-maps.jpg',photoAlt:'Fachada y mesas al aire libre de La Pizzería Ni Ahí Estoy',photoCredit:'Hugo Mosqueira · Google Maps · ene 2024',photoSource:'https://www.google.com/maps/place/Pizzer%C3%ADa+Ni+ahi+estoy/data=!4m7!3m6!1s0x945dca8ffffffffd:0x49eef70b1c421673!8m2!3d-25.3327164!4d-57.27491!16s%2Fg%2F11ckd18f77'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
@@ -249,7 +256,7 @@ function renderBusinesses(){
     const visual=document.createElement('div');visual.className='business-visual';
     if(item.nearby){const badge=document.createElement('span');badge.className='business-nearby-label';badge.textContent='Cerca de San Ber';visual.append(badge)}
     if(item.photo){
-      const img=document.createElement('img');img.src=item.photo;img.alt=item.photoAlt||`${item.name}, fotografía de su edificio`;img.loading='lazy';if(item.photoPosition)img.style.objectPosition=item.photoPosition;visual.append(img);
+      const img=document.createElement('img');img.src=item.photo;img.alt=publicBusinessText(item.photoAlt||`${item.name}, fotografía de su edificio`);img.loading='lazy';if(item.photoPosition)img.style.objectPosition=item.photoPosition;visual.append(img);
       if(item.photoCredit && item.photoSource?.includes('google.com/maps')){
         visual.classList.add('business-visual-maps');
         const credit=document.createElement('a');credit.className='maps-photo-credit';credit.href=item.photoSource;credit.target='_blank';credit.rel='noopener noreferrer';credit.textContent=item.photoCredit;credit.setAttribute('aria-label',`Fuente de la fotografía: ${item.photoCredit}`);visual.append(credit);
@@ -263,10 +270,10 @@ function renderBusinesses(){
     const top=document.createElement('div');top.className='business-card-top';
     const type=document.createElement('span');type.className='business-type';type.textContent=item.type;
     top.append(type);
-    const title=document.createElement('h3');title.textContent=item.name;
-    const area=document.createElement('p');area.className='business-area';area.textContent=item.nearby?item.area.replace(/^Cerca de San Ber\s*·\s*/,''):item.area;
+    const title=document.createElement('h3');title.textContent=publicBusinessText(item.name);
+    const area=document.createElement('p');area.className='business-area';area.textContent=publicBusinessText(item.nearby?item.area.replace(/^Cerca de San Ber\s*·\s*/,''):item.area);
     const description=item.description?document.createElement('p'):null;
-    if(description){description.className='business-description';description.textContent=item.description}
+    if(description){description.className='business-description';description.textContent=publicBusinessText(item.description)}
     const actions=document.createElement('div');actions.className='business-actions';
     addBusinessLink(actions,'Cómo llegar en Google Maps ↗',item.maps,true);
     if(item.phone){const normalized=item.phone.replace(/\D/g,'');addBusinessLink(actions,`Llamar · ${item.phone}`,`tel:${normalized.startsWith('595')?'+':''}${normalized.startsWith('595')?normalized:'+595'+(normalized.startsWith('0')?normalized.slice(1):normalized)}`)}

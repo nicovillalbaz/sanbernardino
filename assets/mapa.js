@@ -64,7 +64,7 @@
     detail.append(close);
     if (point.photo) {
       const figure = document.createElement('figure'); figure.className='mapa-detail-image';
-      const img = document.createElement('img'); img.src=point.photo; img.alt=point.photoAlt||point.name; img.loading='lazy'; figure.append(img);
+      const img = document.createElement('img'); img.src=point.photo; img.alt=point.kind==='negocio'?publicBusinessText(point.photoAlt||point.name):(point.photoAlt||point.name); img.loading='lazy'; figure.append(img);
       if(point.photoCredit && point.photoSource?.includes('google.com/maps')){
         const credit=document.createElement('span');credit.className='mapa-photo-credit';credit.textContent=point.photoCredit;figure.append(credit);
       }
@@ -73,8 +73,8 @@
     const body = document.createElement('div'); body.className='mapa-detail-body';
     if(point.nearby){const badge=document.createElement('span');badge.className='mapa-nearby-label';badge.textContent='Cerca de San Ber';body.append(badge)}
     const type=document.createElement('span');type.className='mapa-detail-type';type.textContent=point.kind==='lugar'?'LUGAR · '+point.type:point.type;
-    const title=document.createElement('h2');title.textContent=point.name;
-    const area=document.createElement('p');area.textContent=point.kind==='lugar'?'San Bernardino':point.nearby?point.area.replace(/^Cerca de San Ber\s*·\s*/,''):point.area;
+    const title=document.createElement('h2');title.textContent=point.kind==='negocio'?publicBusinessText(point.name):point.name;
+    const area=document.createElement('p');area.textContent=point.kind==='lugar'?'San Bernardino':publicBusinessText(point.nearby?point.area.replace(/^Cerca de San Ber\s*·\s*/,''):point.area);
     body.append(type,title,area);
     const actions=document.createElement('div');actions.className='mapa-detail-actions';
     if(point.phone){const phone=document.createElement('a');const digits=point.phone.replace(/\D/g,'');phone.href='tel:'+(digits.startsWith('595')?'+':'')+(digits.startsWith('595')?digits:'+595'+(digits.startsWith('0')?digits.slice(1):digits));phone.textContent='Llamar · '+point.phone;actions.append(phone)}
@@ -85,7 +85,8 @@
     const kind = point.kind==='lugar'?'lugar':point.category;
     const glyph = point.kind==='lugar'?'⌖':(byKey[point.category]?.icon||'✳');
     const icon=L.divIcon({className:`mapa-pin mapa-pin-${kind}`,html:`<span aria-hidden="true"><b>${glyph}</b></span>`,iconSize:[32,32],iconAnchor:[16,16]});
-    const marker=L.marker([point.lat,point.lng],{icon,title:point.name,alt:point.name});
+    const markerLabel=point.kind==='negocio'?publicBusinessText(point.name):point.name;
+    const marker=L.marker([point.lat,point.lng],{icon,title:markerLabel,alt:markerLabel});
     marker.on('click',()=>showDetail(point));
     return marker;
   }
