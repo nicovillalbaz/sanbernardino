@@ -179,7 +179,8 @@ const fotosAmpliadas = {
   'Cabron Barber': {photo:'cabron-barber-maps.jpg',photoAlt:'Jardín y fachada de Cabron Barber al atardecer',photoCredit:'Cabron Barber · Google Maps · oct 2025',photoSource:'https://www.google.com/maps/place/Cabron+Barber/data=!4m7!3m6!1s0x945db71b142e5445:0x3295f17a1135df2a!8m2!3d-25.3006017!4d-57.2999233!16s%2Fg%2F11pxvylhtk'},
   'Espacio Cultural Origen': {photo:'espacio-cultural-origen-maps.jpg',photoAlt:'Actuación de danza en Espacio Cultural Origen',photoCredit:'Espacio Cultural Origen · Google Maps · feb 2025',photoSource:'https://www.google.com/maps?cid=6952453208210711992'},
   'Es Vedrá San Bernardino': {photo:'es-vedra-san-bernardino.webp',photoAlt:'Capilla de Es Vedrá con el lago Ypacaraí al fondo',photoCredit:'InfoNegocios Paraguay · fotografía publicada en 2024',photoSource:'https://infonegocios.com.py/amp/y-ademas/el-lugar-del-momento-es-vedra-el-centro-de-eventos-mas-lujoso-del-paraguay-en-san-bernardino'},
-  'Cavalava San Bernardino': {photo:'cavalava-sanber-maps.webp',photoAlt:'Fachada de Cavalava San Bernardino con letrero de Cavallaro Express',photoCredit:'Cavalava San Bernardino · Google Maps · jul 2026',photoSource:'https://www.google.com/maps?cid=15194842377453628335'}
+  'Cavalava San Bernardino': {photo:'cavalava-sanber-maps.webp',photoAlt:'Fachada de Cavalava San Bernardino con letrero de Cavallaro Express',photoCredit:'Cavalava San Bernardino · Google Maps · jul 2026',photoSource:'https://www.google.com/maps?cid=15194842377453628335'},
+  'Laundry San Bernardino': {photo:'laundry-san-bernardino-maps.jpg',photoAlt:'Fachada de Laundry San Bernardino con el cartel del local',photoCredit:'LAUNDRY SB · Google Maps · ago 2023',photoSource:'https://www.google.com/maps?cid=12449271638573459014'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
