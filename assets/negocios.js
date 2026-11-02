@@ -244,7 +244,9 @@ const fotosAmpliadas = {
   'N&C Florería y Novedades': {photo:'nc-floreria-novedades-maps.jpg',photoAlt:'Arreglo de rosas de N&C Florería y Novedades',photoCredit:'N&C Floreria_Novedades · Google Maps · feb 2022',photoSource:'https://www.google.com/maps?cid=6065325143838302722'},
   'Vivero Azul': {photo:'vivero-azul-maps.jpg',photoAlt:'Macetas con cactus y suculentas de Vivero Azul',photoCredit:'Diego · Google Maps · may 2021',photoSource:'https://www.google.com/maps?cid=12798672962428321381'},
   'Vivero Doña Rosa': {photo:'vivero-dona-rosa-maps.jpg',photoAlt:'Palmeras jóvenes cultivadas en Vivero Doña Rosa',photoCredit:'Vivero Doña rosa · Google Maps · sept 2026',photoSource:'https://www.google.com/maps?cid=12969789497317663928'},
-  'Bodega Iván': {photo:'bodega-ivan-maps.jpg',photoAlt:'Heladera de bebidas en Bodega Iván',photoCredit:'Lujan Falcon · Google Maps · sept 2022',photoSource:'https://www.google.com/maps?cid=6555168338596571037'}
+  'Bodega Iván': {photo:'bodega-ivan-maps.jpg',photoAlt:'Heladera de bebidas en Bodega Iván',photoCredit:'Lujan Falcon · Google Maps · sept 2022',photoSource:'https://www.google.com/maps?cid=6555168338596571037'},
+  'LUXU Centro Estético Integral': {photo:'luxu-centro-estetico-maps.jpg',photoAlt:'Interior y puestos de atención de LUXU Centro Estético Integral',photoCredit:'Noelia Ruiz Diaz · Google Maps · dic 2025',photoSource:'https://www.google.com/maps?cid=10288556322368882088'},
+  'Bella Salón Jardín': {photo:'bella-salon-jardin-maps.jpg',photoAlt:'Entrada ajardinada de Bella Salón Jardín',photoCredit:'Ricardo Llano · Google Maps · abr 2026',photoSource:'https://www.google.com/maps?cid=2195821304830566485'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
