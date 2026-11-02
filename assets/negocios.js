@@ -58,6 +58,7 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Tío Luque San Bernardino': {photo:'tio-luque-sanber-localparaguay.jpg',photoAlt:'Hamburguesa mostrada en la ficha de Tío Luque San Bernardino',photoCredit:'Google Maps vía Local Paraguay · autor no identificado',photoSource:'https://localparaguay.net/negocio/tio-luque-san-bernardino'},
   'Mercado de Pulgas': {photo:'mercado-pulgas-feria-abc-2022.jpg',photoAlt:'Feria de emprendedores en la plaza Bernardino Caballero, sede del Mercado de Pulgas',photoCredit:'ABC Color · feria en la plaza Bernardino Caballero · jul 2022',photoSource:'https://www.abc.com.py/viajes/2022/07/03/san-bernardino-una-feria-de-emprendedores-es-la-excusa-para-visitar-la-villa-veraniega-en-invierno/'},
   'Urbanización SADI': {photo:'urbanizacion-sadi-vistaterra.webp',photoAlt:'Arbolado de un terreno publicado en Urbanización SADI',photoCredit:'Vista Terra Inmobiliaria · fotografía de un terreno en SADI',photoSource:'https://vistaterra.com.py/vt-001/'},
   'VISOK Barrio Cerrado': {photo:'visok-barrio-aerea-tucasa.jpg',photoAlt:'Vista aérea de un terreno publicado en el Barrio Cerrado VISOK',photoCredit:'Tu Casa · fotografía aérea de un terreno en VISOK',photoSource:'https://tucasapy.com/propiedad/en-venta-terreno-de-798-m2-san-bernardino-10640640'},
