@@ -58,6 +58,8 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'FarmaOliva San Bernardino': {photo:'farmaoliva-san-bernardino.webp',photoAlt:'Fachada de FarmaOliva en Mariscal López e Independencia Nacional',photoCredit:'FarmaOliva · foto oficial de la sucursal San Bernardino',photoSource:'https://www.farmaoliva.com.py/sucursales'},
+  'FarmaOliva San Bernardino 2': {photo:'farmaoliva-san-bernardino-2.webp',photoAlt:'Fachada de FarmaOliva en Guillermo Naumann y Prof. Nélida Martínez',photoCredit:'FarmaOliva · foto oficial de la sucursal San Bernardino 2',photoSource:'https://www.farmaoliva.com.py/sucursales'},
   'Alto Corte San Bernardino': {photo:'alto-corte-maps.jpg',photoAlt:'Fachada nocturna y mesas de Alto Corte en la avenida Guillermo Naumann',photoCredit:'Google Maps · Jhonny Josué Cubero Ureña · dic 2024',photoSource:'https://www.google.com/maps?cid=5513953174239795257'},
   'La Vienesa Sanber': {photo:'la-vienesa-sanber-maps.jpg',photoAlt:'Entrada y mostrador de La Vienesa Sanber',photoCredit:'Google Maps · Hans-Joachim Koenig · ene 2026',photoSource:'https://www.google.com/maps?cid=16553728912786483118'},
   'Don Vito Original · Morínigo': {photo:'don-vito-morinigo-maps.jpg',photoAlt:'Fachada de Don Vito Original sobre la avenida Guillermo Naumann',photoCredit:'Google Maps · Paula Gimenez · nov 2021',photoSource:'https://www.google.com/maps?cid=13771523774881322180'},
