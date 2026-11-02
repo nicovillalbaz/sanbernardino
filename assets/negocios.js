@@ -233,7 +233,11 @@ const fotosAmpliadas = {
   'Cabaña Buey Rendá': {photo:'cabana-buey-renda-maps.jpg',photoAlt:'Laguna y área verde de Cabaña Buey Rendá',photoCredit:'Luis Sanchez · Google Maps · ago 2025',photoSource:'https://www.google.com/maps?cid=6559643283393377909'},
   'La Soñada Sanber': {photo:'la-sonada-sanber-maps.jpg',photoAlt:'Piscina iluminada de La Soñada Sanber',photoCredit:'Blanca rossana Ozuna de ibañez · Google Maps · abr 2021',photoSource:'https://www.google.com/maps?cid=14796873429309735915'},
   'Casa Avelina': {photo:'casa-avelina-maps.jpg',photoAlt:'Piscina y alojamiento de Casa Avelina en San Bernardino',photoCredit:'Casa Avelina · Google Maps · feb 2024',photoSource:'https://www.google.com/maps?cid=3542671009853699448'},
-  'La Paloma Sanber': {photo:'la-paloma-sanber-maps.jpg',photoAlt:'Fachada y entrada de La Paloma Sanber',photoCredit:'La Paloma Sanber · Google Maps · mar 2023',photoSource:'https://www.google.com/maps?cid=16023365926195456922'}
+  'La Paloma Sanber': {photo:'la-paloma-sanber-maps.jpg',photoAlt:'Fachada y entrada de La Paloma Sanber',photoCredit:'La Paloma Sanber · Google Maps · mar 2023',photoSource:'https://www.google.com/maps?cid=16023365926195456922'},
+  'Don Juan Carlos': {photo:'don-juan-carlos-maps.jpg',photoAlt:'Piscina entre las cabañas de Don Juan Carlos en San Bernardino',photoCredit:'Heather Canatta · Google Maps · dic 2022',photoSource:'https://www.google.com/maps?cid=16821907139817047897'},
+  'Casa del Lago San Bernardino': {photo:'casa-del-lago-maps.jpg',photoAlt:'Fachada iluminada de Casa del Lago San Bernardino',photoCredit:'Casa del Lago San Bernardino Paraguay · Google Maps · mar 2023',photoSource:'https://www.google.com/maps?cid=8758925788788903950'},
+  'Casa Vittoria Sanber': {photo:'casa-vittoria-maps.jpg',photoAlt:'Piscina y fachada de Casa Vittoria Sanber',photoCredit:'Casa Vittoria Sanber · Google Maps · may 2022',photoSource:'https://www.google.com/maps?cid=6787221446837103154'},
+  'JF Cabañas San Bernardino': {photo:'jf-cabanas-maps.jpg',photoAlt:'Fachada de madera de JF Cabañas San Bernardino',photoCredit:'Jf cabañas san bernardino · Google Maps · dic 2021',photoSource:'https://www.google.com/maps?cid=12597034327941889033'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
