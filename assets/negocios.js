@@ -213,7 +213,10 @@ const fotosAmpliadas = {
   'Sasha Wellness Center': {photo:'sasha-wellness-center-maps.jpg',photoAlt:'Grupo de entrenamiento en la terraza de Sasha Wellness Center',photoCredit:'Karen Quintana · Google Maps · nov 2024',photoSource:'https://www.google.com/maps?cid=11312680609013498132'},
   'Vikingos Gym': {photo:'vikingos-gym-maps.jpg',photoAlt:'Sala de pesas y máquinas de Vikingos Gym en Altos',photoCredit:'Angel Torres · Google Maps · sept 2023',photoSource:'https://www.google.com/maps?cid=1495983192716220117'},
   'Crisálida Yoga Aéreo': {photo:'crisalida-yoga-aereo-maps.jpg',photoAlt:'Presentación de Crisálida Yoga Aéreo con una practicante junto a las telas',photoCredit:'Crisálida Yoga Aéreo · Google Maps · abr 2025',photoSource:'https://www.google.com/maps?cid=6774438076345926137'},
-  'Club 24 de Septiembre': {photo:'club-24-septiembre-maps.jpg',photoAlt:'Partido de fútbol en el campo del Club 24 de Septiembre',photoCredit:'Claudia liliana Fleitas pereira · Google Maps · mar 2019',photoSource:'https://www.google.com/maps?cid=11436389562128830976'}
+  'Club 24 de Septiembre': {photo:'club-24-septiembre-maps.jpg',photoAlt:'Partido de fútbol en el campo del Club 24 de Septiembre',photoCredit:'Claudia liliana Fleitas pereira · Google Maps · mar 2019',photoSource:'https://www.google.com/maps?cid=11436389562128830976'},
+  'Boutique Sanber': {photo:'boutique-sanber-maps.jpg',photoAlt:'Fachada y letrero de Boutique Sanber sobre la avenida Guillermo Naumann',photoCredit:'Diego Ruiz Diaz · Google Maps · dic 2020',photoSource:'https://www.google.com/maps?cid=7876067637639472837'},
+  'Shopping Mercado SanBer': {photo:'shopping-mercado-sanber-maps.jpg',photoAlt:'Puestos de artesanías y visitantes en Shopping Mercado SanBer',photoCredit:'Shopping Mercado SanBer · Google Maps · ago 2024',photoSource:'https://www.google.com/maps?cid=18008631585957413057'},
+  'Samber Shop': {photo:'samber-shop-maps.jpg',photoAlt:'Fachada de Samber Shop fotografiada en 2016',photoCredit:'Marco Gutiérrez · Google Maps · jul 2016',photoSource:'https://www.google.com/maps?cid=2631613672547640999'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
