@@ -202,7 +202,13 @@ const fotosAmpliadas = {
   'Casa Quinta Cielo Azul': {photo:'casa-quinta-cielo-azul-booking.jpg',photoAlt:'Casa y piscina iluminada de Casa Quinta Cielo Azul',photoCredit:'Booking.com · Google Vacation Rentals vía Maps',photoSource:'https://www.google.com/maps?cid=11620353747609844968'},
   'Casa Don Liborio': {photo:'casa-don-liborio-maps.jpg',photoAlt:'Postres helados publicados en la ficha de Casa Don Liborio',photoCredit:'Casa Don Liborio · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=17473023128608413206'},
   'Ferretería La Candelaria': {photo:'ferreteria-la-candelaria-maps.jpg',photoAlt:'Cartel de Ferretería La Candelaria',photoCredit:'Haniela Jazmín Penayo Torales · Google Maps · jul 2020',photoSource:'https://www.google.com/maps?cid=13102218764814649838'},
-  'Quinta Victoria Roga': {photo:'quinta-victoria-roga-maps.jpg',photoAlt:'Patio y acceso de Quinta Victoria Roga',photoCredit:'Jorge Kyle · Google Maps · jun 2026',photoSource:'https://www.google.com/maps?cid=1466342769192669666'}
+  'Quinta Victoria Roga': {photo:'quinta-victoria-roga-maps.jpg',photoAlt:'Patio y acceso de Quinta Victoria Roga',photoCredit:'Jorge Kyle · Google Maps · jun 2026',photoSource:'https://www.google.com/maps?cid=1466342769192669666'},
+  'Emilse Segovia Coiffure': {photo:'emilse-segovia-coiffure-maps.jpg',photoAlt:'Peinado recogido realizado por Emilse Segovia Coiffure',photoCredit:'Emilse Segovia Coiffure · Google Maps · ene 2023',photoSource:'https://www.google.com/maps?cid=415000236506333755'},
+  'NERI ESPÍNOLA masculino/femenino': {photo:'neri-espinola-maps.jpg',photoAlt:'Fachada de Neri Espínola masculino y femenino en 2023',photoCredit:'NERI ESPINOLA MASCULINO/FEMENINO · Google Maps · oct 2023',photoSource:'https://www.google.com/maps?cid=8339459816782340365'},
+  'SaraLi Salón de Belleza': {photo:'sarali-salon-belleza-maps.jpg',photoAlt:'Puesto de peinado y espejo en SaraLi Salón de Belleza',photoCredit:'SaraLi Salón de Belleza · Google Maps · feb 2021',photoSource:'https://www.google.com/maps?cid=5016792798078307257'},
+  'ÁVA Club Sanber': {photo:'ava-club-sanber-maps.jpg',photoAlt:'Recepción y letrero de ÁVA Club Sanber',photoCredit:'Juan carlos Aguilera frutos · Google Maps · ene 2023',photoSource:'https://www.google.com/maps?cid=5725822333802615209'},
+  'Anyprieto Makeup': {photo:'anyprieto-makeup-maps.jpg',photoAlt:'Cartel de Anyprieto Makeup con su contacto en San Bernardino',photoCredit:'Analia Prieto · Google Maps · nov 2023',photoSource:'https://www.google.com/maps?cid=16611183940570633736'},
+  'Maestic Spa': {photo:'maestic-spa-maps.jpg',photoAlt:'Fachada y cartel de Maestic Spa sobre Julio Büttner',photoCredit:'Pamelita Paredes · Google Maps · feb 2026',photoSource:'https://www.google.com/maps?cid=15799080687924870225'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
