@@ -1,4 +1,4 @@
-const CACHE_NAME = 'san-bernardino-v91';
+const CACHE_NAME = 'san-bernardino-v92';
 const APP_FILES = [
   'index.html', 'actividades.html', 'lugares.html', 'negocios.html', 'mapa.html',
   'historia.html', 'creditos.html', 'manifest.webmanifest',

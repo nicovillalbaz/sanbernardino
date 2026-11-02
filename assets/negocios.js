@@ -58,6 +58,11 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Masajes Holístico San Bernardino': {photo:'masajes-holistico-san-bernardino-maps.jpg',photoAlt:'Espacio de Masajes Holístico San Bernardino con colchonetas y la profesional en el local',photoCredit:'Masajes HOLISTICO San Bernardino Py · Google Maps',photoSource:'https://www.google.com/maps?cid=15216034049415878840'},
+  'Donpi-ki': {photo:'donpi-ki-maps.jpg',photoAlt:'Cancha de fútbol sintético de Donpi-ki',photoCredit:'Marcelo Sandoval · Google Maps · dic 2022',photoSource:'https://www.google.com/maps?cid=17308618520162500534'},
+  'Leidy Makeup Eyelash': {photo:'leidy-makeup-maps.jpg',photoAlt:'Detalle de un trabajo de extensiones de pestañas de Leidy Makeup Eyelash',photoCredit:'Leidy Makeup Eyelash · Google Maps',photoSource:'https://www.google.com/maps?cid=625381774167966569'},
+  'Joseph Sanber': {photo:'joseph-sanber-maps.jpg',photoAlt:'Interior de Joseph Sanber durante un servicio de peluquería',photoCredit:'Angie Noguera · Google Maps · feb 2021',photoSource:'https://www.google.com/maps?cid=16177231005617754142'},
+  'Veterinaria Balmaceda a Domicilio': {photo:'veterinaria-balmaceda-maps.jpg',photoAlt:'Estanterías de productos veterinarios en el local de Veterinaria Balmaceda',photoCredit:'Veterinaria Balmaceda · Google Maps · feb 2025',photoSource:'https://www.google.com/maps?cid=3462587662009382873'},
   'FarmaOliva San Bernardino': {photo:'farmaoliva-san-bernardino.webp',photoAlt:'Fachada de FarmaOliva en Mariscal López e Independencia Nacional',photoCredit:'FarmaOliva · foto oficial de la sucursal San Bernardino',photoSource:'https://www.farmaoliva.com.py/sucursales'},
   'FarmaOliva San Bernardino 2': {photo:'farmaoliva-san-bernardino-2.webp',photoAlt:'Fachada de FarmaOliva en Guillermo Naumann y Prof. Nélida Martínez',photoCredit:'FarmaOliva · foto oficial de la sucursal San Bernardino 2',photoSource:'https://www.farmaoliva.com.py/sucursales'},
   'Alto Corte San Bernardino': {photo:'alto-corte-maps.jpg',photoAlt:'Fachada nocturna y mesas de Alto Corte en la avenida Guillermo Naumann',photoCredit:'Google Maps · Jhonny Josué Cubero Ureña · dic 2024',photoSource:'https://www.google.com/maps?cid=5513953174239795257'},
