@@ -196,7 +196,12 @@ const fotosAmpliadas = {
   'Quinta Flia. Núñez': {photo:'quinta-flia-nunez-maps.jpg',photoAlt:'Jardín con palmeras, casa y piscina de Quinta Flia. Núñez',photoCredit:'Shirley Nuñez · Google Maps · ene 2025',photoSource:'https://www.google.com/maps?cid=6636807636632954192'},
   'Quinta La Soñada': {photo:'quinta-la-sonada-maps.jpg',photoAlt:'Patio, jardín y piscina de Quinta La Soñada',photoCredit:'Eli Mora · Google Maps · sept 2026',photoSource:'https://www.google.com/maps?cid=16076248342012731582'},
   'Casa Quinta Los Villa': {photo:'casa-quinta-los-villa-maps.jpg',photoAlt:'Piscina y patio de Casa Quinta Los Villa',photoCredit:'Noemi Villalba Villasanti · Google Maps · oct 2020',photoSource:'https://www.google.com/maps?cid=5527819658319289768'},
-  'Quinta Ana María': {photo:'quinta-ana-maria-maps.jpg',photoAlt:'Acceso con cartel de Quinta Ana María',photoCredit:'Gonzalo Resquin · Google Maps · ago 2026',photoSource:'https://www.google.com/maps?cid=6024179010475903010'}
+  'Quinta Ana María': {photo:'quinta-ana-maria-maps.jpg',photoAlt:'Acceso con cartel de Quinta Ana María',photoCredit:'Gonzalo Resquin · Google Maps · ago 2026',photoSource:'https://www.google.com/maps?cid=6024179010475903010'},
+  'Entre Pinos': {photo:'entre-pinos-maps.jpg',photoAlt:'Piscina y jardín de Entre Pinos',photoCredit:'Ricardo Sotelo · Google Maps · oct 2023',photoSource:'https://www.google.com/maps?cid=13648720893844896005'},
+  'Quinta Sanber': {photo:'quinta-sanber-maps.jpg',photoAlt:'Casa y piscina de Quinta Sanber',photoCredit:'Quinta sanber · Google Maps · ene 2022',photoSource:'https://www.google.com/maps?cid=5875711482841946960'},
+  'Casa Quinta Cielo Azul': {photo:'casa-quinta-cielo-azul-booking.jpg',photoAlt:'Casa y piscina iluminada de Casa Quinta Cielo Azul',photoCredit:'Booking.com · Google Vacation Rentals vía Maps',photoSource:'https://www.google.com/maps?cid=11620353747609844968'},
+  'Casa Don Liborio': {photo:'casa-don-liborio-maps.jpg',photoAlt:'Postres helados publicados en la ficha de Casa Don Liborio',photoCredit:'Casa Don Liborio · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=17473023128608413206'},
+  'Ferretería La Candelaria': {photo:'ferreteria-la-candelaria-maps.jpg',photoAlt:'Cartel de Ferretería La Candelaria',photoCredit:'Haniela Jazmín Penayo Torales · Google Maps · jul 2020',photoSource:'https://www.google.com/maps?cid=13102218764814649838'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];

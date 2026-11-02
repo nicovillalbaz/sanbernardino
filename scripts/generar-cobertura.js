@@ -24,8 +24,9 @@ const sections = [
   ['movilidad', 'Movilidad'], ['servicios', 'Servicios'], ['inmuebles', 'Vivir e invertir']
 ];
 const clean = value => String(value).replaceAll('|', '\\|');
+const fechaRevision = new Intl.DateTimeFormat('es-PY', {timeZone: 'America/Asuncion', day: '2-digit', month: '2-digit', year: 'numeric'}).format(new Date());
 let markdown = `# Cobertura fotográfica de las fichas comerciales\n\n` +
-  `Revisión local del 31/10/2026. Son ${businesses.length} fichas: ${photographed} con foto específica integrada y ${businesses.length - photographed} con acceso directo a Maps sin foto local. Cada ficha conserva una fuente en los archivos de datos. La procedencia de las fotografías integradas figura en \`san-bernardino/creditos.html\`.\n\n` +
+  `Revisión local del ${fechaRevision}. Son ${businesses.length} fichas: ${photographed} con foto específica integrada y ${businesses.length - photographed} con acceso directo a Maps sin foto local. Cada ficha conserva una fuente en los archivos de datos. La procedencia de las fotografías integradas figura en \`san-bernardino/creditos.html\`.\n\n` +
   `La ficha de Maps permite abrir la ubicación y su galería. No implica que el local esté abierto ni autoriza por sí sola a republicar las fotos de terceros. Para incorporar una foto, comprobar sede, autor, fecha y atribución.\n\n`;
 
 for (const [category, title] of sections) {
