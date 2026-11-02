@@ -224,7 +224,9 @@ const fotosAmpliadas = {
   'Shell San Bernardino · Grupo MAO': {photo:'shell-grupo-mao-maps.jpg',photoAlt:'Playa de carga y tienda Select de Shell Grupo MAO en San Bernardino',photoCredit:'Teresio Vera Martínez · Google Maps · dic 2022',photoSource:'https://www.google.com/maps?cid=2628153956785511632'},
   'Petrobras · San Bernardino': {photo:'petrobras-san-bernardino-maps.jpg',photoAlt:'Surtidores y tienda de Petrobras en San Bernardino',photoCredit:'Denis Estigarribia · Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=8946260746330299028'},
   'Petropar Grupo Fafra': {photo:'petropar-fafra-maps.jpg',photoAlt:'Estación Petropar Grupo FAFRA iluminada de noche en San Bernardino',photoCredit:'Petropar Grupo FAFRA San Bernardino · Google Maps · abr 2023',photoSource:'https://www.google.com/maps?cid=621283894765998441'},
-  'Copetrol · San Bernardino': {photo:'copetrol-san-bernardino-maps.jpg',photoAlt:'Surtidores y fachada de Copetrol en San Bernardino',photoCredit:'Denis Estigarribia · Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=1155805347274668919'}
+  'Copetrol · San Bernardino': {photo:'copetrol-san-bernardino-maps.jpg',photoAlt:'Surtidores y fachada de Copetrol en San Bernardino',photoCredit:'Denis Estigarribia · Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=1155805347274668919'},
+  '3MG · Los Alpes': {photo:'3mg-los-alpes-maps.jpg',photoAlt:'Surtidores y tienda de la estación 3MG Los Alpes en San Bernardino',photoCredit:'Denis Estigarribia · Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=17392210226762889123'},
+  'Copetrol · Ciervo Cuá': {photo:'copetrol-ciervo-cua-maps.jpg',photoAlt:'Surtidores y tienda de Copetrol en Ciervo Cuá',photoCredit:'Jorge Duarte · Google Maps · sept 2020',photoSource:'https://www.google.com/maps?cid=16428582297275052963'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
