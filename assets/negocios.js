@@ -58,6 +58,8 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'RE/MAX Summer · San Bernardino': {photo:'remax-summer-maps.jpg',photoAlt:'Interior de la oficina RE/MAX Summer en San Bernardino',photoCredit:'RE/MAX Summer San Bernardino · Google Maps · abr 2025',photoSource:'https://www.google.com/maps?cid=14388086044910383108'},
+  'Casa Blanca Inmobiliaria': {photo:'casa-blanca-inmobiliaria-maps.jpg',photoAlt:'Jardín y propiedad publicados por Casa Blanca Inmobiliaria',photoCredit:'Casa Blanca Inmobiliaria · Google Maps · jun 2021',photoSource:'https://www.google.com/maps?cid=10354558860274590875'},
   'Madre Selva · Ciervo Cuá': {photo:'madre-selva-forbes.webp',photoAlt:'Vista aérea del acceso y el bosque de Madre Selva junto al lago Ypacaraí',photoCredit:'Forbes Paraguay · fotografía publicada en 2024',photoSource:'https://www.forbes.com.py/negocios/con-una-inversion-us-4-millones-nace-san-bernadino-barrio-cerrado-madre-selva-n60060'},
   'La Matilde Barrio Privado': {photo:'la-matilde-barrio-privado-infonegocios.webp',photoAlt:'Piscina y canchas del complejo La Matilde en Villa Real',photoCredit:'InfoNegocios Paraguay · fotografía del complejo La Matilde',photoSource:'https://infonegocios.com.py/infoviajes/la-matilde-lodge-un-concepto-diferente-de-san-ber-con-nueve-comodas-cabanas-y-dos-canchas-para-jugar-padel'},
   'Cantegrill San Bernardino': {photo:'cantegrill-acceso-maps.jpg',photoAlt:'Letrero iluminado de acceso al condominio Cantegrill de San Bernardino',photoCredit:'Gabriella Ariana Ferreira Hazeldine · Google Maps · mar 2026',photoSource:'https://www.google.com/maps?cid=6220792187963888341'},
