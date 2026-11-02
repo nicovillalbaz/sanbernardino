@@ -58,6 +58,7 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Barrio Pindó': {photo:'barrio-pindo-viaparaguay.jpg',photoAlt:'Área verde y senderos del Barrio Pindó en San Bernardino',photoCredit:'VíaParaguay · fotografía del Barrio Pindó',photoSource:'https://viaparaguay.com/es/propiedades/terreno-de-800-m2-en-venta-en-barrio-cerrado-pindo-san-bernardino'},
   'Candela Boutique': {photo:'candela-boutique-maps.jpg',photoAlt:'Fachada y maniquíes de Candela Boutique en San Bernardino',photoCredit:'Google Maps · Jessica JaraChena · may 2025',photoSource:'https://www.google.com/maps?cid=8972149004722513416'},
   'Bikinishop': {photo:'bikinishop-maps.jpg',photoAlt:'Local de Bikinishop con ropa de playa en San Bernardino',photoCredit:'Google Maps · Bikinishop · ene 2025',photoSource:'https://www.google.com/maps?cid=10891987126070109353'},
   'Kcell Sanber': {photo:'kcell-sanber-maps.jpg',photoAlt:'Vidriera y productos de Kcell Sanber sobre la ruta San Bernardino–Altos',photoCredit:'Romina Power · Google Maps · ago 2024',photoSource:'https://www.google.com/maps?cid=6320753829859269818'},
