@@ -189,7 +189,9 @@ const fotosAmpliadas = {
   'Rikibarber Shop': {photo:'rikibarber-shop-maps.jpg',photoAlt:'Interior y silla de peluquería de Rikibarber Shop',photoCredit:'Ricardo Emilio Godoy · Google Maps · ago 2022',photoSource:'https://www.google.com/maps?cid=15921532477376003940'},
   'Quinta Don Kiko Bajac': {photo:'quinta-don-kiko-bajac-maps.jpg',photoAlt:'Piscina, palmeras y patio de Quinta Don Kiko Bajac',photoCredit:'Blanca Bazzano · Google Maps · abr 2023',photoSource:'https://www.google.com/maps?cid=6821881102147127500'},
   'Quinta Mía': {photo:'quinta-mia-maps.jpg',photoAlt:'Patio arbolado, hamaca y piscina de Quinta Mía',photoCredit:'QUINTA MIA · Google Maps · ene 2023',photoSource:'https://www.google.com/maps?cid=9342474581155853464'},
-  'Quinta Don Plutarco': {photo:'quinta-don-plutarco-maps.jpg',photoAlt:'Piscina y fuente de agua de Quinta Don Plutarco',photoCredit:'Quinta Don Plutarco · Google Maps · oct 2024',photoSource:'https://www.google.com/maps?cid=18177769696330229424'}
+  'Quinta Don Plutarco': {photo:'quinta-don-plutarco-maps.jpg',photoAlt:'Piscina y fuente de agua de Quinta Don Plutarco',photoCredit:'Quinta Don Plutarco · Google Maps · oct 2024',photoSource:'https://www.google.com/maps?cid=18177769696330229424'},
+  'Quinta JYE': {photo:'quinta-jye-maps.jpg',photoAlt:'Piscina de Quinta JYE al atardecer',photoCredit:'Jorge Lopez · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=3655826270509344234'},
+  'Casa Quinta Mi Pequeño Gran Sueño II': {photo:'casa-quinta-mi-pequeno-gran-sueno-ii-maps.jpg',photoAlt:'Piscina y casa de Casa Quinta Mi Pequeño Gran Sueño II',photoCredit:'CASA QUINTA MI PEQUEÑO GRAN SUEÑO II · Google Maps · ene 2023',photoSource:'https://www.google.com/maps?cid=6688401034437195119'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
