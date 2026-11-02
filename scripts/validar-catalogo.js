@@ -30,6 +30,7 @@ for (const item of businesses) {
   if (names.has(item.name)) errors.push(`${item.name}: nombre duplicado`);
   names.add(item.name);
   for (const field of ['name', 'area', 'description', 'photoAlt']) {
+    if (opaqueZone.test(String(item[field] || ''))) errors.push(`${item.name}: código de zona en datos de ${field}`);
     if (opaqueZone.test(publicBusinessText(item[field]))) errors.push(`${item.name}: código de zona visible en ${field}`);
   }
   if (!item.maps || !/^https:\/\/(www\.)?google\.com\/maps/.test(item.maps)) {
