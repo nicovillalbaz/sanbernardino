@@ -216,7 +216,9 @@ const fotosAmpliadas = {
   'Club 24 de Septiembre': {photo:'club-24-septiembre-maps.jpg',photoAlt:'Partido de fútbol en el campo del Club 24 de Septiembre',photoCredit:'Claudia liliana Fleitas pereira · Google Maps · mar 2019',photoSource:'https://www.google.com/maps?cid=11436389562128830976'},
   'Boutique Sanber': {photo:'boutique-sanber-maps.jpg',photoAlt:'Fachada y letrero de Boutique Sanber sobre la avenida Guillermo Naumann',photoCredit:'Diego Ruiz Diaz · Google Maps · dic 2020',photoSource:'https://www.google.com/maps?cid=7876067637639472837'},
   'Shopping Mercado SanBer': {photo:'shopping-mercado-sanber-maps.jpg',photoAlt:'Puestos de artesanías y visitantes en Shopping Mercado SanBer',photoCredit:'Shopping Mercado SanBer · Google Maps · ago 2024',photoSource:'https://www.google.com/maps?cid=18008631585957413057'},
-  'Samber Shop': {photo:'samber-shop-maps.jpg',photoAlt:'Fachada de Samber Shop fotografiada en 2016',photoCredit:'Marco Gutiérrez · Google Maps · jul 2016',photoSource:'https://www.google.com/maps?cid=2631613672547640999'}
+  'Samber Shop': {photo:'samber-shop-maps.jpg',photoAlt:'Fachada de Samber Shop fotografiada en 2016',photoCredit:'Marco Gutiérrez · Google Maps · jul 2016',photoSource:'https://www.google.com/maps?cid=2631613672547640999'},
+  'Marketplace Sanber': {photo:'marketplace-sanber-maps.jpg',photoAlt:'Artículos de decoración y ropa exhibidos en Marketplace Sanber en 2020',photoCredit:'Market Place S.A. · Google Maps · ene 2020',photoSource:'https://www.google.com/maps?cid=8730502105524156036'},
+  'La Cumbre · San Bernardino': {photo:'la-cumbre-sanber-maps.jpg',photoAlt:'Fachada de La Cumbre Comercial en San Bernardino fotografiada en 2024',photoCredit:'Cinthia Gimenez · Google Maps · mar 2024',photoSource:'https://www.google.com/maps?cid=469642837713770177'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
