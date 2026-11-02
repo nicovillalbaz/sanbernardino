@@ -246,7 +246,10 @@ const fotosAmpliadas = {
   'Vivero Doña Rosa': {photo:'vivero-dona-rosa-maps.jpg',photoAlt:'Palmeras jóvenes cultivadas en Vivero Doña Rosa',photoCredit:'Vivero Doña rosa · Google Maps · sept 2026',photoSource:'https://www.google.com/maps?cid=12969789497317663928'},
   'Bodega Iván': {photo:'bodega-ivan-maps.jpg',photoAlt:'Heladera de bebidas en Bodega Iván',photoCredit:'Lujan Falcon · Google Maps · sept 2022',photoSource:'https://www.google.com/maps?cid=6555168338596571037'},
   'LUXU Centro Estético Integral': {photo:'luxu-centro-estetico-maps.jpg',photoAlt:'Interior y puestos de atención de LUXU Centro Estético Integral',photoCredit:'Noelia Ruiz Diaz · Google Maps · dic 2025',photoSource:'https://www.google.com/maps?cid=10288556322368882088'},
-  'Bella Salón Jardín': {photo:'bella-salon-jardin-maps.jpg',photoAlt:'Entrada ajardinada de Bella Salón Jardín',photoCredit:'Ricardo Llano · Google Maps · abr 2026',photoSource:'https://www.google.com/maps?cid=2195821304830566485'}
+  'Bella Salón Jardín': {photo:'bella-salon-jardin-maps.jpg',photoAlt:'Entrada ajardinada de Bella Salón Jardín',photoCredit:'Ricardo Llano · Google Maps · abr 2026',photoSource:'https://www.google.com/maps?cid=2195821304830566485'},
+  'Barrio Cerrado Villa Martina': {photo:'barrio-villa-martina-realtor.jpg',photoAlt:'Galería exterior y área de juegos del barrio cerrado Villa Martina',photoCredit:'CENTURY 21 Wilson-Chihan · foto del anuncio en Realtor.com · 2026',photoSource:'https://www.realtor.com/international/py/barrio-cerrado-villa-martina-s-n-san-bernardino-cordillera-san-bernardino-cordillera-department-310119544230/'},
+  'Cerca del Cielo': {photo:'cerca-del-cielo-maps.jpg',photoAlt:'Vista exterior y paisaje desde Cerca del Cielo',photoCredit:'nene osorio · Google Maps · may 2021',photoSource:'https://www.google.com/maps?cid=12308032737075950947'},
+  'Highlands · Park & Lagoon': {photo:'highlands-park-lagoon-maps.jpg',photoAlt:'Acceso iluminado a Highlands Park & Lagoon al atardecer',photoCredit:'Highlands, Park & Lagoon · Google Maps · jun 2026',photoSource:'https://www.google.com/maps?cid=12739821320087929584'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
