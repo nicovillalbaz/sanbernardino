@@ -201,7 +201,8 @@ const fotosAmpliadas = {
   'Quinta Sanber': {photo:'quinta-sanber-maps.jpg',photoAlt:'Casa y piscina de Quinta Sanber',photoCredit:'Quinta sanber · Google Maps · ene 2022',photoSource:'https://www.google.com/maps?cid=5875711482841946960'},
   'Casa Quinta Cielo Azul': {photo:'casa-quinta-cielo-azul-booking.jpg',photoAlt:'Casa y piscina iluminada de Casa Quinta Cielo Azul',photoCredit:'Booking.com · Google Vacation Rentals vía Maps',photoSource:'https://www.google.com/maps?cid=11620353747609844968'},
   'Casa Don Liborio': {photo:'casa-don-liborio-maps.jpg',photoAlt:'Postres helados publicados en la ficha de Casa Don Liborio',photoCredit:'Casa Don Liborio · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=17473023128608413206'},
-  'Ferretería La Candelaria': {photo:'ferreteria-la-candelaria-maps.jpg',photoAlt:'Cartel de Ferretería La Candelaria',photoCredit:'Haniela Jazmín Penayo Torales · Google Maps · jul 2020',photoSource:'https://www.google.com/maps?cid=13102218764814649838'}
+  'Ferretería La Candelaria': {photo:'ferreteria-la-candelaria-maps.jpg',photoAlt:'Cartel de Ferretería La Candelaria',photoCredit:'Haniela Jazmín Penayo Torales · Google Maps · jul 2020',photoSource:'https://www.google.com/maps?cid=13102218764814649838'},
+  'Quinta Victoria Roga': {photo:'quinta-victoria-roga-maps.jpg',photoAlt:'Patio y acceso de Quinta Victoria Roga',photoCredit:'Jorge Kyle · Google Maps · jun 2026',photoSource:'https://www.google.com/maps?cid=1466342769192669666'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
