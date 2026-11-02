@@ -220,7 +220,11 @@ const fotosAmpliadas = {
   'Marketplace Sanber': {photo:'marketplace-sanber-maps.jpg',photoAlt:'Artículos de decoración y ropa exhibidos en Marketplace Sanber en 2020',photoCredit:'Market Place S.A. · Google Maps · ene 2020',photoSource:'https://www.google.com/maps?cid=8730502105524156036'},
   'La Cumbre · San Bernardino': {photo:'la-cumbre-sanber-maps.jpg',photoAlt:'Fachada de La Cumbre Comercial en San Bernardino fotografiada en 2024',photoCredit:'Cinthia Gimenez · Google Maps · mar 2024',photoSource:'https://www.google.com/maps?cid=469642837713770177'},
   'Paseo del Centro': {photo:'paseo-del-centro-maps.jpg',photoAlt:'Acceso y letrero del Paseo del Centro en San Bernardino',photoCredit:'Jovina Romero · Google Maps · sept 2021',photoSource:'https://www.google.com/maps?cid=13559258469821384734'},
-  'Bodega Stumpfs': {photo:'bodega-stumpfs-maps.jpg',photoAlt:'Fachada iluminada de Bodega Stumpfs fotografiada en 2017',photoCredit:'iriàn Gimenèz · Google Maps · ene 2017',photoSource:'https://www.google.com/maps?cid=9693148709723422814'}
+  'Bodega Stumpfs': {photo:'bodega-stumpfs-maps.jpg',photoAlt:'Fachada iluminada de Bodega Stumpfs fotografiada en 2017',photoCredit:'iriàn Gimenèz · Google Maps · ene 2017',photoSource:'https://www.google.com/maps?cid=9693148709723422814'},
+  'Shell San Bernardino · Grupo MAO': {photo:'shell-grupo-mao-maps.jpg',photoAlt:'Playa de carga y tienda Select de Shell Grupo MAO en San Bernardino',photoCredit:'Teresio Vera Martínez · Google Maps · dic 2022',photoSource:'https://www.google.com/maps?cid=2628153956785511632'},
+  'Petrobras · San Bernardino': {photo:'petrobras-san-bernardino-maps.jpg',photoAlt:'Surtidores y tienda de Petrobras en San Bernardino',photoCredit:'Denis Estigarribia · Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=8946260746330299028'},
+  'Petropar Grupo Fafra': {photo:'petropar-fafra-maps.jpg',photoAlt:'Estación Petropar Grupo FAFRA iluminada de noche en San Bernardino',photoCredit:'Petropar Grupo FAFRA San Bernardino · Google Maps · abr 2023',photoSource:'https://www.google.com/maps?cid=621283894765998441'},
+  'Copetrol · San Bernardino': {photo:'copetrol-san-bernardino-maps.jpg',photoAlt:'Surtidores y fachada de Copetrol en San Bernardino',photoCredit:'Denis Estigarribia · Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=1155805347274668919'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
