@@ -58,6 +58,8 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Candela Boutique': {photo:'candela-boutique-maps.jpg',photoAlt:'Fachada y maniquíes de Candela Boutique en San Bernardino',photoCredit:'Google Maps · Jessica JaraChena · may 2025',photoSource:'https://www.google.com/maps?cid=8972149004722513416'},
+  'Bikinishop': {photo:'bikinishop-maps.jpg',photoAlt:'Local de Bikinishop con ropa de playa en San Bernardino',photoCredit:'Google Maps · Bikinishop · ene 2025',photoSource:'https://www.google.com/maps?cid=10891987126070109353'},
   'Kcell Sanber': {photo:'kcell-sanber-maps.jpg',photoAlt:'Vidriera y productos de Kcell Sanber sobre la ruta San Bernardino–Altos',photoCredit:'Romina Power · Google Maps · ago 2024',photoSource:'https://www.google.com/maps?cid=6320753829859269818'},
   'Blumen Boutique': {photo:'blumen-boutique-maps.jpg',photoAlt:'Fachada y vidriera de Blumen Boutique en San Bernardino',photoCredit:'Blumen Boutique · Google Maps · dic 2022',photoSource:'https://www.google.com/maps?cid=7017170775683567435'},
   'Henley · San Bernardino': {photo:'henley-san-bernardino-maps.jpg',photoAlt:'Fachada de Henley en la avenida Luis F. Vache',photoCredit:'Henley · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=17962758248687089842'},
