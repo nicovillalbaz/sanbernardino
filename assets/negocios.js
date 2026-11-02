@@ -227,7 +227,13 @@ const fotosAmpliadas = {
   'Copetrol · San Bernardino': {photo:'copetrol-san-bernardino-maps.jpg',photoAlt:'Surtidores y fachada de Copetrol en San Bernardino',photoCredit:'Denis Estigarribia · Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=1155805347274668919'},
   '3MG · Los Alpes': {photo:'3mg-los-alpes-maps.jpg',photoAlt:'Surtidores y tienda de la estación 3MG Los Alpes en San Bernardino',photoCredit:'Denis Estigarribia · Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=17392210226762889123'},
   'Copetrol · Ciervo Cuá': {photo:'copetrol-ciervo-cua-maps.jpg',photoAlt:'Surtidores y tienda de Copetrol en Ciervo Cuá',photoCredit:'Jorge Duarte · Google Maps · sept 2020',photoSource:'https://www.google.com/maps?cid=16428582297275052963'},
-  'Motorepuestos Jony': {photo:'motorepuestos-jony-maps.jpg',photoAlt:'Interior y mostrador de Motorepuestos Jony en San Bernardino',photoCredit:'Mirian Montti · Google Maps · mar 2024',photoSource:'https://www.google.com/maps?cid=16442820185235024864'}
+  'Motorepuestos Jony': {photo:'motorepuestos-jony-maps.jpg',photoAlt:'Interior y mostrador de Motorepuestos Jony en San Bernardino',photoCredit:'Mirian Montti · Google Maps · mar 2024',photoSource:'https://www.google.com/maps?cid=16442820185235024864'},
+  'Taller Quintana': {photo:'taller-quintana-maps.jpg',photoAlt:'Motocicleta Yamaha en Taller Quintana de San Bernardino',photoCredit:'Nelson Quintana · Google Maps · jul 2018',photoSource:'https://www.google.com/maps?cid=2451694168672271922'},
+  'La Casita de Mis Sueños Sanber': {photo:'casita-mis-suenos-maps.jpg',photoAlt:'Casa y piscina de La Casita de Mis Sueños Sanber',photoCredit:'La Casita de mis Sueños Sanber · Google Maps · may 2021',photoSource:'https://www.google.com/maps?cid=595084050742139597'},
+  'Cabaña Buey Rendá': {photo:'cabana-buey-renda-maps.jpg',photoAlt:'Laguna y área verde de Cabaña Buey Rendá',photoCredit:'Luis Sanchez · Google Maps · ago 2025',photoSource:'https://www.google.com/maps?cid=6559643283393377909'},
+  'La Soñada Sanber': {photo:'la-sonada-sanber-maps.jpg',photoAlt:'Piscina iluminada de La Soñada Sanber',photoCredit:'Blanca rossana Ozuna de ibañez · Google Maps · abr 2021',photoSource:'https://www.google.com/maps?cid=14796873429309735915'},
+  'Casa Avelina': {photo:'casa-avelina-maps.jpg',photoAlt:'Piscina y alojamiento de Casa Avelina en San Bernardino',photoCredit:'Casa Avelina · Google Maps · feb 2024',photoSource:'https://www.google.com/maps?cid=3542671009853699448'},
+  'La Paloma Sanber': {photo:'la-paloma-sanber-maps.jpg',photoAlt:'Fachada y entrada de La Paloma Sanber',photoCredit:'La Paloma Sanber · Google Maps · mar 2023',photoSource:'https://www.google.com/maps?cid=16023365926195456922'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
