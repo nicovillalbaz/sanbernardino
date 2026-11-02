@@ -58,6 +58,12 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Kcell Sanber': {photo:'kcell-sanber-maps.jpg',photoAlt:'Vidriera y productos de Kcell Sanber sobre la ruta San Bernardino–Altos',photoCredit:'Romina Power · Google Maps · ago 2024',photoSource:'https://www.google.com/maps?cid=6320753829859269818'},
+  'Blumen Boutique': {photo:'blumen-boutique-maps.jpg',photoAlt:'Fachada y vidriera de Blumen Boutique en San Bernardino',photoCredit:'Blumen Boutique · Google Maps · dic 2022',photoSource:'https://www.google.com/maps?cid=7017170775683567435'},
+  'Henley · San Bernardino': {photo:'henley-san-bernardino-maps.jpg',photoAlt:'Fachada de Henley en la avenida Luis F. Vache',photoCredit:'Henley · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=17962758248687089842'},
+  'Naeve': {photo:'naeve-maps.jpg',photoAlt:'Interior de la tienda de ropa Naeve con su letrero',photoCredit:'Evelin Ayala · Google Maps · jun 2022',photoSource:'https://www.google.com/maps?cid=16339448184124713388'},
+  'La Bonita Arte y Moda': {photo:'la-bonita-arte-moda-maps.jpg',photoAlt:'Interior y prendas de La Bonita Arte y Moda',photoCredit:'Leticia Méndez Agostini · Google Maps · ene 2024',photoSource:'https://www.google.com/maps?cid=3811202360721045914'},
+  'Outdoors San Bernardino': {photo:'outdoors-san-bernardino-maps.jpg',photoAlt:'Fachada y vidriera de Outdoors San Bernardino',photoCredit:'Romy Florentin · Google Maps · dic 2022',photoSource:'https://www.google.com/maps?cid=16566490762069677822'},
   'RE/MAX Summer · San Bernardino': {photo:'remax-summer-maps.jpg',photoAlt:'Interior de la oficina RE/MAX Summer en San Bernardino',photoCredit:'RE/MAX Summer San Bernardino · Google Maps · abr 2025',photoSource:'https://www.google.com/maps?cid=14388086044910383108'},
   'Casa Blanca Inmobiliaria': {photo:'casa-blanca-inmobiliaria-maps.jpg',photoAlt:'Jardín y propiedad publicados por Casa Blanca Inmobiliaria',photoCredit:'Casa Blanca Inmobiliaria · Google Maps · jun 2021',photoSource:'https://www.google.com/maps?cid=10354558860274590875'},
   'Madre Selva · Ciervo Cuá': {photo:'madre-selva-forbes.webp',photoAlt:'Vista aérea del acceso y el bosque de Madre Selva junto al lago Ypacaraí',photoCredit:'Forbes Paraguay · fotografía publicada en 2024',photoSource:'https://www.forbes.com.py/negocios/con-una-inversion-us-4-millones-nace-san-bernadino-barrio-cerrado-madre-selva-n60060'},
