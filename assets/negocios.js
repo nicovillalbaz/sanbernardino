@@ -58,6 +58,8 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Urbanización SADI': {photo:'urbanizacion-sadi-vistaterra.webp',photoAlt:'Arbolado de un terreno publicado en Urbanización SADI',photoCredit:'Vista Terra Inmobiliaria · fotografía de un terreno en SADI',photoSource:'https://vistaterra.com.py/vt-001/'},
+  'VISOK Barrio Cerrado': {photo:'visok-barrio-aerea-tucasa.jpg',photoAlt:'Vista aérea de un terreno publicado en el Barrio Cerrado VISOK',photoCredit:'Tu Casa · fotografía aérea de un terreno en VISOK',photoSource:'https://tucasapy.com/propiedad/en-venta-terreno-de-798-m2-san-bernardino-10640640'},
   'Barrio Pindó': {photo:'barrio-pindo-viaparaguay.jpg',photoAlt:'Área verde y senderos del Barrio Pindó en San Bernardino',photoCredit:'VíaParaguay · fotografía del Barrio Pindó',photoSource:'https://viaparaguay.com/es/propiedades/terreno-de-800-m2-en-venta-en-barrio-cerrado-pindo-san-bernardino'},
   'Candela Boutique': {photo:'candela-boutique-maps.jpg',photoAlt:'Fachada y maniquíes de Candela Boutique en San Bernardino',photoCredit:'Google Maps · Jessica JaraChena · may 2025',photoSource:'https://www.google.com/maps?cid=8972149004722513416'},
   'Bikinishop': {photo:'bikinishop-maps.jpg',photoAlt:'Local de Bikinishop con ropa de playa en San Bernardino',photoCredit:'Google Maps · Bikinishop · ene 2025',photoSource:'https://www.google.com/maps?cid=10891987126070109353'},
