@@ -253,7 +253,13 @@ const fotosAmpliadas = {
   'Sunset Hills': {photo:'sunset-hills-maps.jpg',photoAlt:'Casas de Sunset Hills con vista al lago Ypacaraí',photoCredit:'Jorge Tentolini · Google Maps · jun 2021',photoSource:'https://www.google.com/maps?cid=13150555974543471078'},
   'Casa de Jack': {photo:'casa-de-jack-maps.jpg',photoAlt:'Ambientación nocturna iluminada en Casa de Jack',photoCredit:'Lucas Arias · Google Maps · ene 2022',photoSource:'https://www.google.com/maps?cid=15259139278149472911'},
   'Estadio Municipal San Bernardino': {photo:'estadio-municipal-san-bernardino-maps.jpg',photoAlt:'Cancha techada y gradas del Estadio Municipal de San Bernardino',photoCredit:'Niky Riveros · Google Maps · may 2023',photoSource:'https://www.google.com/maps?cid=5048078688479311065'},
-  'Club 12 de Junio': {photo:'club-12-de-junio-maps.jpg',photoAlt:'Cancha de fútbol del Club 12 de Junio fotografiada en 2018',photoCredit:'victor cha · Google Maps · sept 2018',photoSource:'https://www.google.com/maps?cid=2157001196845684190'}
+  'Club 12 de Junio': {photo:'club-12-de-junio-maps.jpg',photoAlt:'Cancha de fútbol del Club 12 de Junio fotografiada en 2018',photoCredit:'victor cha · Google Maps · sept 2018',photoSource:'https://www.google.com/maps?cid=2157001196845684190'},
+  'Club 12 de Octubre': {photo:'club-12-de-octubre-maps.jpg',photoAlt:'Campo de fútbol del Club 12 de Octubre en San Bernardino',photoCredit:'Guillermo M. Zeballos Ferreira · Google Maps · jul 2024',photoSource:'https://www.google.com/maps?cid=4054850381981882237'},
+  'Club 20 de Julio · San Bernardino': {photo:'club-20-de-julio-maps.jpg',photoAlt:'Campo de fútbol cercado del Club 20 de Julio en San Bernardino',photoCredit:'Guillermo M. Zeballos Ferreira · Google Maps · may 2025',photoSource:'https://www.google.com/maps?cid=10114066756438593175'},
+  'Cancha de Tenis · San Bernardino': {photo:'cancha-tenis-sanber-maps.jpg',photoAlt:'Cancha de tenis de polvo de ladrillo en San Bernardino',photoCredit:'Gustavo Arroyo · Google Maps · feb 2023',photoSource:'https://www.google.com/maps?cid=8000255224737458564'},
+  'LEIRBAG Gimnasia Funcional y Hapkido': {photo:'leirbag-gimnasio-maps.jpg',photoAlt:'Área de entrenamiento y equipamiento de LEIRBAG Gimnasia Funcional y Hapkido',photoCredit:'LEIRBAG Gimnasia Funcional y Hapkido · Google Maps · oct 2024',photoSource:'https://www.google.com/maps?cid=10246621429986879574'},
+  'Pista de Manu': {photo:'pista-de-manu-maps.jpg',photoAlt:'Motociclista recorriendo el sendero de Pista de Manu',photoCredit:'Pista de Manu · Google Maps · jun 2021',photoSource:'https://www.google.com/maps?cid=11040151486924945044'},
+  'Club Nacional': {photo:'club-nacional-maps.jpg',photoAlt:'Acceso al campo del Club Nacional de San Bernardino',photoCredit:'Gustavo Arroyo · Google Maps · feb 2023',photoSource:'https://www.google.com/maps?cid=13772960194346565899'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
