@@ -252,7 +252,8 @@ const fotosAmpliadas = {
   'Highlands · Park & Lagoon': {photo:'highlands-park-lagoon-maps.jpg',photoAlt:'Acceso iluminado a Highlands Park & Lagoon al atardecer',photoCredit:'Highlands, Park & Lagoon · Google Maps · jun 2026',photoSource:'https://www.google.com/maps?cid=12739821320087929584'},
   'Sunset Hills': {photo:'sunset-hills-maps.jpg',photoAlt:'Casas de Sunset Hills con vista al lago Ypacaraí',photoCredit:'Jorge Tentolini · Google Maps · jun 2021',photoSource:'https://www.google.com/maps?cid=13150555974543471078'},
   'Casa de Jack': {photo:'casa-de-jack-maps.jpg',photoAlt:'Ambientación nocturna iluminada en Casa de Jack',photoCredit:'Lucas Arias · Google Maps · ene 2022',photoSource:'https://www.google.com/maps?cid=15259139278149472911'},
-  'Estadio Municipal San Bernardino': {photo:'estadio-municipal-san-bernardino-maps.jpg',photoAlt:'Cancha techada y gradas del Estadio Municipal de San Bernardino',photoCredit:'Niky Riveros · Google Maps · may 2023',photoSource:'https://www.google.com/maps?cid=5048078688479311065'}
+  'Estadio Municipal San Bernardino': {photo:'estadio-municipal-san-bernardino-maps.jpg',photoAlt:'Cancha techada y gradas del Estadio Municipal de San Bernardino',photoCredit:'Niky Riveros · Google Maps · may 2023',photoSource:'https://www.google.com/maps?cid=5048078688479311065'},
+  'Club 12 de Junio': {photo:'club-12-de-junio-maps.jpg',photoAlt:'Cancha de fútbol del Club 12 de Junio fotografiada en 2018',photoCredit:'victor cha · Google Maps · sept 2018',photoSource:'https://www.google.com/maps?cid=2157001196845684190'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
