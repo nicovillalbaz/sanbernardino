@@ -191,7 +191,12 @@ const fotosAmpliadas = {
   'Quinta Mía': {photo:'quinta-mia-maps.jpg',photoAlt:'Patio arbolado, hamaca y piscina de Quinta Mía',photoCredit:'QUINTA MIA · Google Maps · ene 2023',photoSource:'https://www.google.com/maps?cid=9342474581155853464'},
   'Quinta Don Plutarco': {photo:'quinta-don-plutarco-maps.jpg',photoAlt:'Piscina y fuente de agua de Quinta Don Plutarco',photoCredit:'Quinta Don Plutarco · Google Maps · oct 2024',photoSource:'https://www.google.com/maps?cid=18177769696330229424'},
   'Quinta JYE': {photo:'quinta-jye-maps.jpg',photoAlt:'Piscina de Quinta JYE al atardecer',photoCredit:'Jorge Lopez · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=3655826270509344234'},
-  'Casa Quinta Mi Pequeño Gran Sueño II': {photo:'casa-quinta-mi-pequeno-gran-sueno-ii-maps.jpg',photoAlt:'Piscina y casa de Casa Quinta Mi Pequeño Gran Sueño II',photoCredit:'CASA QUINTA MI PEQUEÑO GRAN SUEÑO II · Google Maps · ene 2023',photoSource:'https://www.google.com/maps?cid=6688401034437195119'}
+  'Casa Quinta Mi Pequeño Gran Sueño II': {photo:'casa-quinta-mi-pequeno-gran-sueno-ii-maps.jpg',photoAlt:'Piscina y casa de Casa Quinta Mi Pequeño Gran Sueño II',photoCredit:'CASA QUINTA MI PEQUEÑO GRAN SUEÑO II · Google Maps · ene 2023',photoSource:'https://www.google.com/maps?cid=6688401034437195119'},
+  'Quinta Ypa Sanber': {photo:'quinta-ypa-sanber-maps.jpg',photoAlt:'Piscina y casa de Quinta Ypa Sanber',photoCredit:'Marco Gauto · Google Maps · sept 2022',photoSource:'https://www.google.com/maps?cid=8135524678952008139'},
+  'Quinta Flia. Núñez': {photo:'quinta-flia-nunez-maps.jpg',photoAlt:'Jardín con palmeras, casa y piscina de Quinta Flia. Núñez',photoCredit:'Shirley Nuñez · Google Maps · ene 2025',photoSource:'https://www.google.com/maps?cid=6636807636632954192'},
+  'Quinta La Soñada': {photo:'quinta-la-sonada-maps.jpg',photoAlt:'Patio, jardín y piscina de Quinta La Soñada',photoCredit:'Eli Mora · Google Maps · sept 2026',photoSource:'https://www.google.com/maps?cid=16076248342012731582'},
+  'Casa Quinta Los Villa': {photo:'casa-quinta-los-villa-maps.jpg',photoAlt:'Piscina y patio de Casa Quinta Los Villa',photoCredit:'Noemi Villalba Villasanti · Google Maps · oct 2020',photoSource:'https://www.google.com/maps?cid=5527819658319289768'},
+  'Quinta Ana María': {photo:'quinta-ana-maria-maps.jpg',photoAlt:'Acceso con cartel de Quinta Ana María',photoCredit:'Gonzalo Resquin · Google Maps · ago 2026',photoSource:'https://www.google.com/maps?cid=6024179010475903010'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
