@@ -250,7 +250,9 @@ const fotosAmpliadas = {
   'Barrio Cerrado Villa Martina': {photo:'barrio-villa-martina-realtor.jpg',photoAlt:'Galería exterior y área de juegos del barrio cerrado Villa Martina',photoCredit:'CENTURY 21 Wilson-Chihan · foto del anuncio en Realtor.com · 2026',photoSource:'https://www.realtor.com/international/py/barrio-cerrado-villa-martina-s-n-san-bernardino-cordillera-san-bernardino-cordillera-department-310119544230/'},
   'Cerca del Cielo': {photo:'cerca-del-cielo-maps.jpg',photoAlt:'Vista exterior y paisaje desde Cerca del Cielo',photoCredit:'nene osorio · Google Maps · may 2021',photoSource:'https://www.google.com/maps?cid=12308032737075950947'},
   'Highlands · Park & Lagoon': {photo:'highlands-park-lagoon-maps.jpg',photoAlt:'Acceso iluminado a Highlands Park & Lagoon al atardecer',photoCredit:'Highlands, Park & Lagoon · Google Maps · jun 2026',photoSource:'https://www.google.com/maps?cid=12739821320087929584'},
-  'Sunset Hills': {photo:'sunset-hills-maps.jpg',photoAlt:'Casas de Sunset Hills con vista al lago Ypacaraí',photoCredit:'Jorge Tentolini · Google Maps · jun 2021',photoSource:'https://www.google.com/maps?cid=13150555974543471078'}
+  'Sunset Hills': {photo:'sunset-hills-maps.jpg',photoAlt:'Casas de Sunset Hills con vista al lago Ypacaraí',photoCredit:'Jorge Tentolini · Google Maps · jun 2021',photoSource:'https://www.google.com/maps?cid=13150555974543471078'},
+  'Casa de Jack': {photo:'casa-de-jack-maps.jpg',photoAlt:'Ambientación nocturna iluminada en Casa de Jack',photoCredit:'Lucas Arias · Google Maps · ene 2022',photoSource:'https://www.google.com/maps?cid=15259139278149472911'},
+  'Estadio Municipal San Bernardino': {photo:'estadio-municipal-san-bernardino-maps.jpg',photoAlt:'Cancha techada y gradas del Estadio Municipal de San Bernardino',photoCredit:'Niky Riveros · Google Maps · may 2023',photoSource:'https://www.google.com/maps?cid=5048078688479311065'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
