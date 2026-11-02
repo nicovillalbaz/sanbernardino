@@ -58,6 +58,8 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'La Matilde Barrio Privado': {photo:'la-matilde-barrio-privado-infonegocios.webp',photoAlt:'Piscina y canchas del complejo La Matilde en Villa Real',photoCredit:'InfoNegocios Paraguay · fotografía del complejo La Matilde',photoSource:'https://infonegocios.com.py/infoviajes/la-matilde-lodge-un-concepto-diferente-de-san-ber-con-nueve-comodas-cabanas-y-dos-canchas-para-jugar-padel'},
+  'Cantegrill San Bernardino': {photo:'cantegrill-acceso-maps.jpg',photoAlt:'Letrero iluminado de acceso al condominio Cantegrill de San Bernardino',photoCredit:'Gabriella Ariana Ferreira Hazeldine · Google Maps · mar 2026',photoSource:'https://www.google.com/maps?cid=6220792187963888341'},
   'Masajes Holístico San Bernardino': {photo:'masajes-holistico-san-bernardino-maps.jpg',photoAlt:'Espacio de Masajes Holístico San Bernardino con colchonetas y la profesional en el local',photoCredit:'Masajes HOLISTICO San Bernardino Py · Google Maps',photoSource:'https://www.google.com/maps?cid=15216034049415878840'},
   'Donpi-ki': {photo:'donpi-ki-maps.jpg',photoAlt:'Cancha de fútbol sintético de Donpi-ki',photoCredit:'Marcelo Sandoval · Google Maps · dic 2022',photoSource:'https://www.google.com/maps?cid=17308618520162500534'},
   'Leidy Makeup Eyelash': {photo:'leidy-makeup-maps.jpg',photoAlt:'Detalle de un trabajo de extensiones de pestañas de Leidy Makeup Eyelash',photoCredit:'Leidy Makeup Eyelash · Google Maps',photoSource:'https://www.google.com/maps?cid=625381774167966569'},
