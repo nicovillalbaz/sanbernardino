@@ -218,7 +218,9 @@ const fotosAmpliadas = {
   'Shopping Mercado SanBer': {photo:'shopping-mercado-sanber-maps.jpg',photoAlt:'Puestos de artesanías y visitantes en Shopping Mercado SanBer',photoCredit:'Shopping Mercado SanBer · Google Maps · ago 2024',photoSource:'https://www.google.com/maps?cid=18008631585957413057'},
   'Samber Shop': {photo:'samber-shop-maps.jpg',photoAlt:'Fachada de Samber Shop fotografiada en 2016',photoCredit:'Marco Gutiérrez · Google Maps · jul 2016',photoSource:'https://www.google.com/maps?cid=2631613672547640999'},
   'Marketplace Sanber': {photo:'marketplace-sanber-maps.jpg',photoAlt:'Artículos de decoración y ropa exhibidos en Marketplace Sanber en 2020',photoCredit:'Market Place S.A. · Google Maps · ene 2020',photoSource:'https://www.google.com/maps?cid=8730502105524156036'},
-  'La Cumbre · San Bernardino': {photo:'la-cumbre-sanber-maps.jpg',photoAlt:'Fachada de La Cumbre Comercial en San Bernardino fotografiada en 2024',photoCredit:'Cinthia Gimenez · Google Maps · mar 2024',photoSource:'https://www.google.com/maps?cid=469642837713770177'}
+  'La Cumbre · San Bernardino': {photo:'la-cumbre-sanber-maps.jpg',photoAlt:'Fachada de La Cumbre Comercial en San Bernardino fotografiada en 2024',photoCredit:'Cinthia Gimenez · Google Maps · mar 2024',photoSource:'https://www.google.com/maps?cid=469642837713770177'},
+  'Paseo del Centro': {photo:'paseo-del-centro-maps.jpg',photoAlt:'Acceso y letrero del Paseo del Centro en San Bernardino',photoCredit:'Jovina Romero · Google Maps · sept 2021',photoSource:'https://www.google.com/maps?cid=13559258469821384734'},
+  'Bodega Stumpfs': {photo:'bodega-stumpfs-maps.jpg',photoAlt:'Fachada iluminada de Bodega Stumpfs fotografiada en 2017',photoCredit:'iriàn Gimenèz · Google Maps · ene 2017',photoSource:'https://www.google.com/maps?cid=9693148709723422814'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
