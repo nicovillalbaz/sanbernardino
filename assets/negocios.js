@@ -240,7 +240,11 @@ const fotosAmpliadas = {
   'JF Cabañas San Bernardino': {photo:'jf-cabanas-maps.jpg',photoAlt:'Fachada de madera de JF Cabañas San Bernardino',photoCredit:'Jf cabañas san bernardino · Google Maps · dic 2021',photoSource:'https://www.google.com/maps?cid=12597034327941889033'},
   'Beauty&Spa Siempre Bella': {photo:'beauty-spa-siempre-bella-maps.jpg',photoAlt:'Fachada de peluquería y barbería publicada por Beauty&Spa Siempre Bella',photoCredit:'Beauty&Spa Siempre Bella · Google Maps · oct 2023',photoSource:'https://www.google.com/maps?cid=17972193883487275390'},
   'Hernán Barber Studio': {photo:'hernan-barber-studio-maps.jpg',photoAlt:'Interior de Hernán Barber Studio en San Bernardino',photoCredit:'Hernán Barber Studio · Google Maps · may 2026',photoSource:'https://www.google.com/maps?cid=16629364645760115815'},
-  'C&C BarberShop · Álvaro Godoy': {photo:'cc-barbershop-alvaro-godoy-maps.jpg',photoAlt:'Interior de C&C BarberShop de Álvaro Godoy',photoCredit:'C&C BarberShop (Alvaro_Godoy) · Google Maps · oct 2025',photoSource:'https://www.google.com/maps?cid=16547855746877196928'}
+  'C&C BarberShop · Álvaro Godoy': {photo:'cc-barbershop-alvaro-godoy-maps.jpg',photoAlt:'Interior de C&C BarberShop de Álvaro Godoy',photoCredit:'C&C BarberShop (Alvaro_Godoy) · Google Maps · oct 2025',photoSource:'https://www.google.com/maps?cid=16547855746877196928'},
+  'N&C Florería y Novedades': {photo:'nc-floreria-novedades-maps.jpg',photoAlt:'Arreglo de rosas de N&C Florería y Novedades',photoCredit:'N&C Floreria_Novedades · Google Maps · feb 2022',photoSource:'https://www.google.com/maps?cid=6065325143838302722'},
+  'Vivero Azul': {photo:'vivero-azul-maps.jpg',photoAlt:'Macetas con cactus y suculentas de Vivero Azul',photoCredit:'Diego · Google Maps · may 2021',photoSource:'https://www.google.com/maps?cid=12798672962428321381'},
+  'Vivero Doña Rosa': {photo:'vivero-dona-rosa-maps.jpg',photoAlt:'Palmeras jóvenes cultivadas en Vivero Doña Rosa',photoCredit:'Vivero Doña rosa · Google Maps · sept 2026',photoSource:'https://www.google.com/maps?cid=12969789497317663928'},
+  'Bodega Iván': {photo:'bodega-ivan-maps.jpg',photoAlt:'Heladera de bebidas en Bodega Iván',photoCredit:'Lujan Falcon · Google Maps · sept 2022',photoSource:'https://www.google.com/maps?cid=6555168338596571037'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
