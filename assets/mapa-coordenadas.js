@@ -96,5 +96,12 @@ const coordenadasMapa = {
   '10211015202262052267': {name:'Estudio de Danza Jaquelin Gómez',lat:-25.3272583,lng:-57.2683352},
   '12206019331651429332': {name:'Splash Lav',lat:-25.33267,lng:-57.2749227},
   '16459256940954813091': {name:'Moto Repuesto Ara',lat:-25.3063219,lng:-57.2968236},
-  '10354558860274590875': {name:'Casa Blanca Inmobiliaria',lat:-25.3380324,lng:-57.2867804}
+  '10354558860274590875': {name:'Casa Blanca Inmobiliaria',lat:-25.3380324,lng:-57.2867804},
+  '5203194381456459270': {name:'Imprenta Sanber',lat:-25.3066085,lng:-57.2975428},
+  '6952453208210711992': {name:'Espacio Cultural Origen',lat:-25.328415,lng:-57.2784864},
+  '10158678851054017903': {name:'Lavandería San Valentín',lat:-25.3037881,lng:-57.2918144},
+  '15099234920591849968': {name:'Lavandería AO Johei Sanber',lat:-25.3089852,lng:-57.2986091},
+  '12449271638573459014': {name:'Laundry San Bernardino',lat:-25.3072488,lng:-57.2981022},
+  '15194842377453628335': {name:'Cavalava San Bernardino',lat:-25.3051429,lng:-57.2950503},
+  '1305342799539723044': {name:'La Chusquita',lat:-25.3348976,lng:-57.2601845}
 };
