@@ -74,5 +74,9 @@ const coordenadasMapa = {
   '9248426803793798319': {name:'La Soñada Hotel Boutique',lat:-25.3284928,lng:-57.2797646},
   '10700738766888837455': {name:'Hotel Acqua',lat:-25.3325795,lng:-57.275067},
   '1887142533479662085': {name:'NM23 Garage',lat:-25.3067207,lng:-57.2984348},
-  '7324429639670260378': {name:'La Casita · Rotonda',lat:-25.3104876,lng:-57.3019271}
+  '7324429639670260378': {name:'La Casita · Rotonda',lat:-25.3104876,lng:-57.3019271},
+  '16821907139817047897': {name:'Don Juan Carlos',lat:-25.3429286,lng:-57.2742757},
+  '3783153878646473606': {name:'Cabañas Los Árboles',lat:-25.3013172,lng:-57.2928373},
+  '13559258469821384734': {name:'Paseo del Centro',lat:-25.3098883,lng:-57.2999294},
+  '469642837713770177': {name:'La Cumbre · San Bernardino',lat:-25.3069838,lng:-57.2980903}
 };
