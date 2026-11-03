@@ -1,4 +1,4 @@
-// Posiciones leídas en la ficha concreta de Google Maps el 30/10/2026.
+// Posiciones leídas en la ficha concreta de Google Maps el 30/10 y 03/11/2026.
 // Las claves son los CID de los enlaces ya presentes en el directorio.
 const coordenadasMapa = {
   '3675460703706851359': {name:'Adorei Mar y Tierra Resto Bar',lat:-25.297193,lng:-57.3047381},
@@ -11,5 +11,25 @@ const coordenadasMapa = {
   '12061807221554995515': {name:'El Balcón de Sanber',lat:-25.3092194,lng:-57.2990492},
   '6683796965853289548': {name:'El Privado San Ber',lat:-25.3404775,lng:-57.2771542},
   '4079234536489618576': {name:'El Viejo Marino',lat:-25.3103851,lng:-57.2969433},
-  '1004169682405693302': {name:'La Matera Gourmet',lat:-25.3345896,lng:-57.2733323}
+  '1004169682405693302': {name:'La Matera Gourmet',lat:-25.3345896,lng:-57.2733323},
+  '8040228847042224074': {name:'O Gaúcho San Bernardino',lat:-25.3104544,lng:-57.2979723},
+  '8888821567859199760': {name:'Hotel del Lago',lat:-25.3097574,lng:-57.3015407},
+  '7579521313968650142': {name:'La Alemana',lat:-25.31,lng:-57.2997222},
+  '2470572163745714099': {name:'Quinta Poe Poe',lat:-25.28468,lng:-57.307541},
+  '11886793529628302513': {name:'La Carossa San Bernardino',lat:-25.3068303,lng:-57.2945374},
+  '17511148297735601505': {name:'Mbokaja Cabañas',lat:-25.320715,lng:-57.265591},
+  '9044698587815504945': {name:'Quinta Tatano Espacios del Cielo',lat:-25.2927639,lng:-57.2690634},
+  '13058794253580071895': {name:'Hotel La Lilia',lat:-25.307751,lng:-57.302486},
+  '9928165040269858174': {name:'Hotel Acuario',lat:-25.3427655,lng:-57.2830313},
+  '7124968286368465922': {name:'A Toda Huerta',lat:-25.3036032,lng:-57.2994382},
+  '12138254580982722778': {name:'El Super Chivito Uruguayo',lat:-25.3096473,lng:-57.2988774},
+  '7079186938985973099': {name:'La Casita Helados',lat:-25.3093867,lng:-57.3002615},
+  '12438706211113279091': {name:'Juan Valdez Café San Bernardino',lat:-25.3120106,lng:-57.2943287},
+  '1248478416334901541': {name:'Villa Aurora Café Resto Bar',lat:-25.295049,lng:-57.2944586},
+  '13551444572970400222': {name:'Villa María · Del Val Hotel & Bistrô',lat:-25.3082908,lng:-57.3035831},
+  '13321060134146207211': {name:'La Casa del Cerro',lat:-25.3077408,lng:-57.3029032},
+  '16537058772470854256': {name:'TAVA Glamping Cerro',lat:-25.2954673,lng:-57.2741703},
+  '15497586206540427903': {name:'San Beer Cervecería',lat:-25.3096169,lng:-57.3017805},
+  '3072814515864584159': {name:'BarriosGym',lat:-25.2875463,lng:-57.298908},
+  '12013646243177327528': {name:'San Ber Gym',lat:-25.3092349,lng:-57.298956}
 };

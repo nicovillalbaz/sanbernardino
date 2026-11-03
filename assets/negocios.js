@@ -285,7 +285,8 @@ const fotosAmpliadas = {
   'Cancha de Tenis · San Bernardino': {photo:'cancha-tenis-sanber-maps.jpg',photoAlt:'Cancha de tenis de polvo de ladrillo en San Bernardino',photoCredit:'Gustavo Arroyo · Google Maps · feb 2023',photoSource:'https://www.google.com/maps?cid=8000255224737458564'},
   'LEIRBAG Gimnasia Funcional y Hapkido': {photo:'leirbag-gimnasio-maps.jpg',photoAlt:'Área de entrenamiento y equipamiento de LEIRBAG Gimnasia Funcional y Hapkido',photoCredit:'LEIRBAG Gimnasia Funcional y Hapkido · Google Maps · oct 2024',photoSource:'https://www.google.com/maps?cid=10246621429986879574'},
   'Pista de Manu': {photo:'pista-de-manu-maps.jpg',photoAlt:'Motociclista recorriendo el sendero de Pista de Manu',photoCredit:'Pista de Manu · Google Maps · jun 2021',photoSource:'https://www.google.com/maps?cid=11040151486924945044'},
-  'Club Nacional': {photo:'club-nacional-maps.jpg',photoAlt:'Acceso al campo del Club Nacional de San Bernardino',photoCredit:'Gustavo Arroyo · Google Maps · feb 2023',photoSource:'https://www.google.com/maps?cid=13772960194346565899'}
+  'Club Nacional': {photo:'club-nacional-maps.jpg',photoAlt:'Acceso al campo del Club Nacional de San Bernardino',photoCredit:'Gustavo Arroyo · Google Maps · feb 2023',photoSource:'https://www.google.com/maps?cid=13772960194346565899'},
+  'Ferretería y Pinturería Elite': {photo:'ferreteria-pintureria-elite-maps.jpg',photoAlt:'Fachada azul y letrero de Ferretería y Pinturería Elite sobre la avenida Guillermo Naumann',photoCredit:'Ferretería y Pinturería Elite · Google Maps · 2026',photoSource:'https://www.google.com/maps/place/Ferreter%C3%ADa+y+Pinturer%C3%ADa+Elite/data=!4m7!3m6!1s0x945dcb58240fc71f:0xcab56e2e19db5320!8m2!3d-25.3549149!4d-57.2676747!16s%2Fg%2F11nvym0cg2'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];
