@@ -1,6 +1,6 @@
 # San Bernardino · guía local
 
-Sitio estático en código local, sin marca pública definitiva. Tiene portada, historia, lugares, actividades, agenda, directorio, mapa y créditos. Se puede copiar a una VPS o a un hosting sin compilación ni base de datos.
+Sitio estático, sin marca pública definitiva. Tiene portada, historia, lugares, actividades, agenda, directorio, mapa y créditos. El código está conectado a GitHub y tiene una publicación de prueba en `https://sanbernardino.pages.dev/`; no requiere compilación ni base de datos.
 
 ## Abrir en local
 
@@ -11,6 +11,12 @@ python -m http.server 8080 --bind 127.0.0.1
 ```
 
 Abrir `http://127.0.0.1:8080/`. Para subirlo, copiar el contenido de esta carpeta a `public_html`, `www` o la raíz pública configurada. `index.html` es la entrada y todas las rutas internas son relativas.
+
+## Publicación y búsqueda
+
+Cloudflare Pages toma la rama `main` del repositorio GitHub. La configuración es: sin framework, comando de compilación vacío, directorio de salida `.` y directorio raíz `/`. Cada cambio enviado a `main` crea una nueva publicación. La URL `pages.dev` es una prueba pública, no un piloto validado.
+
+Las siete páginas tienen título, descripción, URL canónica, Open Graph y tarjeta social; Inicio incluye datos estructurados `WebSite`. `robots.txt` permite el rastreo y `sitemap.xml` enumera las siete páginas. Al cambiar de dominio, ejecutar `node scripts/configurar-seo.js https://nuevo-dominio.example` y revisar los enlaces antes de enviar los archivos. Google Tag Manager y Search Console aún no están configurados en la cuenta del propietario; requieren el ID del contenedor y la verificación de la propiedad, respectivamente.
 
 ## Contenido
 
@@ -34,11 +40,11 @@ Para que la instalación funcione en un host, publicar toda esta carpeta bajo **
 
 Para revisar la invitación desde una pantalla estrecha de escritorio, abrir `http://127.0.0.1:8080/?preview-install=1` con el servidor local activo. El parámetro sólo activa la vista previa en `localhost` o `127.0.0.1`.
 
-La vista de Negocios fue revisada anteriormente en Chrome a 280, 320 y 390 px. Los accesos y filtros móviles se muestran en filas horizontales deslizables. Al tocar un filtro, la página desplaza la vista hasta los resultados. Las fichas sin fotografía usan una franja de rubro compacta; las fichas fotografiadas aparecen primero dentro de cada categoría. El [control de cobertura por ficha](../docs/iniciativas/san-bernardino/12-cobertura-fichas.md) registra 334 negocios con foto y 178 con enlace a Maps sin foto local. La vista local sigue pendiente de comprobación tras esta pasada y de prueba en un teléfono real. La tabla se regenera con `node scripts/generar-cobertura.js`; `node scripts/validar-catalogo.js` comprueba archivos, metadatos y enlaces; `node scripts/auditar-cobertura-integral.js` cuenta fotos y pines sobre todas las fichas activas. Para cada ficha nueva, buscar y revisar una foto del mismo local en la misma pasada que se comprueba la ubicación.
+La vista de Negocios fue revisada anteriormente en Chrome a 280, 320 y 390 px. Los accesos y filtros móviles se muestran en filas horizontales deslizables. Al tocar un filtro, la página desplaza la vista hasta los resultados. Las fichas sin fotografía usan una franja de rubro compacta; las fichas fotografiadas aparecen primero dentro de cada categoría. El [control de cobertura por ficha](../docs/iniciativas/san-bernardino/12-cobertura-fichas.md) registra el detalle; la auditoría actual cuenta 337 negocios con foto y 175 sin foto. Hay 407 negocios con pin y 105 sin pin. La vista local sigue pendiente de comprobación tras esta pasada y de prueba en un teléfono real. La tabla se regenera con `node scripts/generar-cobertura.js`; `node scripts/validar-catalogo.js` comprueba archivos, metadatos y enlaces; `node scripts/auditar-cobertura-integral.js` cuenta fotos y pines sobre todas las fichas activas. Para cada ficha nueva, buscar y revisar una foto del mismo local en la misma pasada que se comprueba la ubicación.
 
 ## Estado editorial
 
-Implementación local, sin piloto ni publicación. La [revisión territorial](../docs/iniciativas/san-bernardino/15-barrido-territorial.md) amplió la [pasada por rubros](../docs/iniciativas/san-bernardino/14-revision-por-rubros.md), corrigió enlaces heredados a puntos concretos de Maps y distinguió negocios de municipios próximos con la etiqueta «Cerca de San Ber». Se mantienen cierres temporales, que pueden ser estacionales, y se ocultan cierres permanentes. Los contactos son públicos en las fuentes indicadas. El directorio no acredita por sí solo apertura, horarios o disponibilidad. Los eventos caducan en el navegador al superar `expires`; para agregar uno, editar `assets/agenda.js` con fecha, sede, fuente y vencimiento.
+Implementación local y publicación técnica de prueba en Cloudflare Pages; sin piloto validado. La [revisión territorial](../docs/iniciativas/san-bernardino/15-barrido-territorial.md) amplió la [pasada por rubros](../docs/iniciativas/san-bernardino/14-revision-por-rubros.md), corrigió enlaces heredados a puntos concretos de Maps y distinguió negocios de municipios próximos con la etiqueta «Cerca de San Ber». Se mantienen cierres temporales, que pueden ser estacionales, y se ocultan cierres permanentes. Los contactos son públicos en las fuentes indicadas. El directorio no acredita por sí solo apertura, horarios o disponibilidad. Los eventos caducan en el navegador al superar `expires`; para agregar uno, editar `assets/agenda.js` con fecha, sede, fuente y vencimiento.
 
 Las 385 imágenes locales provienen de Wikimedia Commons, Love San Bernardino, operadores, SENATUR, medios, un blog con licencia CC BY-SA, Booking.com, Realtor.com y fotos individuales de Google Maps. Todas tienen fuente en `creditos.html`; las de Maps también muestran atribución sobre la tarjeta. Antes de publicar, resolver el derecho de reutilización de las imágenes sin licencia abierta demostrada. La web no utiliza API de pago ni pide clave de Maps. Cada ficha conserva un enlace gratuito a Google Maps. Consultar [la estrategia de imágenes sin facturación](../docs/iniciativas/san-bernardino/11-fotos-google-maps.md) y [el plan de derechos](../docs/iniciativas/san-bernardino/04-imagenes-y-derechos.md).
 
