@@ -66,5 +66,9 @@ const coordenadasMapa = {
   '10878794200660507120': {name:'Biggie · Highlands',lat:-25.3712372,lng:-57.2631511},
   '13083522327613071177': {name:'Biggie · Lago Azul',lat:-25.2978589,lng:-57.3038369},
   '7938588790217383917': {name:'Biggie Express · Aqua',lat:-25.2972287,lng:-57.2702685},
-  '2917105389334299709': {name:'Biggie Express · Ciervo Cuá',lat:-25.2745698,lng:-57.3170088}
+  '2917105389334299709': {name:'Biggie Express · Ciervo Cuá',lat:-25.2745698,lng:-57.3170088},
+  '3087991621517917377': {name:'Burgos Minimarket Oficial',lat:-25.3063262,lng:-57.2968036},
+  '4403694464893191549': {name:'Subway',lat:-25.3116328,lng:-57.2970216},
+  '16613870641270597297': {name:'Popeyes',lat:-25.3054279,lng:-57.2961431},
+  '11664594547079486364': {name:'Mostaza',lat:-25.312608,lng:-57.2961939}
 };
