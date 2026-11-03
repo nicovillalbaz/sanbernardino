@@ -88,5 +88,13 @@ const coordenadasMapa = {
   '6220956045641669487': {name:'I.J. Comercial & Bazar',lat:-25.3041879,lng:-57.2986549},
   '1615824980365867896': {name:'Montemadera San Bernardino',lat:-25.3204772,lng:-57.2848124},
   '9684840157841153060': {name:'Muebles Rústicos Babi',lat:-25.289794,lng:-57.2677597},
-  '6451668211730801184': {name:'Coufa San Bernardino',lat:-25.2985859,lng:-57.3033906}
+  '6451668211730801184': {name:'Coufa San Bernardino',lat:-25.2985859,lng:-57.3033906},
+  '474994127365079719': {name:'Óptica del Lago',lat:-25.3035504,lng:-57.2928088},
+  '15311747793882197654': {name:'Óptica Meister',lat:-25.3095928,lng:-57.29949},
+  '4747558875151931411': {name:'Mercado de Pulgas',lat:-25.3080514,lng:-57.3003497},
+  '911213508243543318': {name:'FrancoMed',lat:-25.3064533,lng:-57.30048},
+  '10211015202262052267': {name:'Estudio de Danza Jaquelin Gómez',lat:-25.3272583,lng:-57.2683352},
+  '12206019331651429332': {name:'Splash Lav',lat:-25.33267,lng:-57.2749227},
+  '16459256940954813091': {name:'Moto Repuesto Ara',lat:-25.3063219,lng:-57.2968236},
+  '10354558860274590875': {name:'Casa Blanca Inmobiliaria',lat:-25.3380324,lng:-57.2867804}
 };
