@@ -1,6 +1,20 @@
 // Posiciones leídas en la ficha concreta de Google Maps el 30/10 y 03/11/2026.
 // Las claves son los CID de los enlaces ya presentes en el directorio.
 const coordenadasMapa = {
+  '14350599515382373898': {name:'La Granja San Ber',lat:-25.2968356,lng:-57.2983632},
+  '14025703931166918390': {name:'Marylash',lat:-25.342744,lng:-57.2742645},
+  '11410565780404005549': {name:'LUGO TRAINING',lat:-25.3345934,lng:-57.2733953},
+  '13169052587248394210': {name:'Clínica del Lago',lat:-25.3371003,lng:-57.2728712},
+  '6034779064092784022': {name:'CAPF M.L',lat:-25.3339143,lng:-57.2684757},
+  '16474708034012384980': {name:'Artesanías Sarita',lat:-25.3106488,lng:-57.3009861},
+  '4281116732642105468': {name:'CMG Repuestos',lat:-25.3327761,lng:-57.2748935},
+  '16442820185235024864': {name:'Motorepuestos Jony',lat:-25.3335546,lng:-57.2742149},
+  '16360093733175698146': {name:'La Matilde Barrio Privado',lat:-25.3522019,lng:-57.2559574},
+  '5685360790155771365': {name:'Barrio Pindó',lat:-25.3509966,lng:-57.2565025},
+  '11255782409873183807': {name:'Barrio Cerrado Villa Martina',lat:-25.2960517,lng:-57.2918276},
+  '9603041868629973978': {name:'Zolara',lat:-25.3310651,lng:-57.2756577},
+  '3908788893283738597': {name:'Lizza Depilaciones San Ber',lat:-25.3058537,lng:-57.2972015},
+  '2808506088986150315': {name:'Happier',lat:-25.3378291,lng:-57.2797159},
   '3675460703706851359': {name:'Adorei Mar y Tierra Resto Bar',lat:-25.297193,lng:-57.3047381},
   '664267405043514670': {name:'Alex Burger',lat:-25.3085924,lng:-57.2997685},
   '8675442845404822037': {name:'Bucca San Bernardino',lat:-25.3100377,lng:-57.2978748},

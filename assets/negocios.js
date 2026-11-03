@@ -58,6 +58,7 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Happier': {photo:'happier-maps.jpg',photoAlt:'Plato de carne asada presentado por Happier',photoCredit:'Happier · Google Maps · mar 2021',photoSource:'https://www.google.com/maps?cid=2808506088986150315'},
   'MiniShop En Lo De Manu': {photo:'minishop-manu-evendo.webp',photoAlt:'Fachada nocturna presentada en la ficha de MiniShop En Lo De Manu',photoCredit:'Evendo · ficha de MiniShop En Lo De Manu · autor no identificado',photoSource:'https://evendo.com/locations/paraguay/san-bernardino/shop/minishop-en-lo-de-manu'},
   'Tío Luque San Bernardino': {photo:'tio-luque-sanber-localparaguay.jpg',photoAlt:'Hamburguesa mostrada en la ficha de Tío Luque San Bernardino',photoCredit:'Google Maps vía Local Paraguay · autor no identificado',photoSource:'https://localparaguay.net/negocio/tio-luque-san-bernardino'},
   'Urbanización SADI': {photo:'urbanizacion-sadi-vistaterra.webp',photoAlt:'Arbolado de un terreno publicado en Urbanización SADI',photoCredit:'Vista Terra Inmobiliaria · fotografía de un terreno en SADI',photoSource:'https://vistaterra.com.py/vt-001/'},
