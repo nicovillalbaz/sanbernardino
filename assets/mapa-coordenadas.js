@@ -31,5 +31,15 @@ const coordenadasMapa = {
   '16537058772470854256': {name:'TAVA Glamping Cerro',lat:-25.2954673,lng:-57.2741703},
   '15497586206540427903': {name:'San Beer Cervecería',lat:-25.3096169,lng:-57.3017805},
   '3072814515864584159': {name:'BarriosGym',lat:-25.2875463,lng:-57.298908},
-  '12013646243177327528': {name:'San Ber Gym',lat:-25.3092349,lng:-57.298956}
+  '12013646243177327528': {name:'San Ber Gym',lat:-25.3092349,lng:-57.298956},
+  '9682665812031100636': {name:'Diablada',lat:-25.3138234,lng:-57.2679352},
+  '14537778815210714813': {name:'PuraPinta Jardín Cervecero',lat:-25.324381,lng:-57.2806155},
+  '6882884668157088915': {name:'HETŪ Sunset Bar',lat:-25.308351,lng:-57.274174},
+  '2464808299564894420': {name:'Berlín Resto Bar',lat:-25.3442684,lng:-57.2733951},
+  '4468224881277970021': {name:'Manguruyú San Bernardino',lat:-25.3029143,lng:-57.3055398},
+  '415000236506333755': {name:'Emilse Segovia Coiffure',lat:-25.307008,lng:-57.2981343},
+  '8339459816782340365': {name:'NERI ESPÍNOLA masculino/femenino',lat:-25.3356288,lng:-57.2626305},
+  '5016792798078307257': {name:'SaraLi Salón de Belleza',lat:-25.3089714,lng:-57.2991894},
+  '5725822333802615209': {name:'ÁVA Club Sanber',lat:-25.3122428,lng:-57.2977409},
+  '17972193883487275390': {name:'Beauty&Spa Siempre Bella',lat:-25.292765,lng:-57.2932723}
 };
