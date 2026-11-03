@@ -78,5 +78,6 @@ const coordenadasMapa = {
   '16821907139817047897': {name:'Don Juan Carlos',lat:-25.3429286,lng:-57.2742757},
   '3783153878646473606': {name:'Cabañas Los Árboles',lat:-25.3013172,lng:-57.2928373},
   '13559258469821384734': {name:'Paseo del Centro',lat:-25.3098883,lng:-57.2999294},
-  '469642837713770177': {name:'La Cumbre · San Bernardino',lat:-25.3069838,lng:-57.2980903}
+  '469642837713770177': {name:'La Cumbre · San Bernardino',lat:-25.3069838,lng:-57.2980903},
+  '3877060139713095186': {name:'Ferretería Dos Hermanos',lat:-25.2783111,lng:-57.2614871}
 };
