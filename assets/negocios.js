@@ -296,7 +296,11 @@ const fotosAmpliadas = {
   'Schlenz Import · Feria Austriaca': {photo:'schlenz-import-maps.jpg',photoAlt:'Estantes de artículos para el hogar en Schlenz Import y Feria Austriaca',photoCredit:'Maria Eugenia Vazquez Recalde · Google Maps · dic 2023',photoSource:'https://www.google.com/maps?cid=4284988084291537985'},
   'Tienda Nuestra Casa': {photo:'tienda-nuestra-casa-maps.jpg',photoAlt:'Interior de Tienda Nuestra Casa con productos de almacén y hogar',photoCredit:'sarah ferreira · Google Maps · ago 2025',photoSource:'https://www.google.com/maps?cid=11827947771025004908'},
   'Artesanías Carmencita Sanber': {photo:'artesanias-carmencita-maps.jpg',photoAlt:'Bolsos y tejidos coloridos expuestos en Artesanías Carmencita Sanber',photoCredit:'Victor Galeano · Google Maps · sept 2017',photoSource:'https://www.google.com/maps?cid=11327865027185408623'},
-  'Ziba': {photo:'ziba-maps.jpg',photoAlt:'Puesto de artesanías Ziba junto al lago, con bolsos, sombreros y bisutería',photoCredit:'Ziba · Google Maps · ene 2024',photoSource:'https://www.google.com/maps?cid=2559080416163216647'}
+  'Ziba': {photo:'ziba-maps.jpg',photoAlt:'Puesto de artesanías Ziba junto al lago, con bolsos, sombreros y bisutería',photoCredit:'Ziba · Google Maps · ene 2024',photoSource:'https://www.google.com/maps?cid=2559080416163216647'},
+  'I.J. Comercial & Bazar': {photo:'ij-comercial-bazar-maps.jpg',photoAlt:'Fachada roja y letrero de I.J. Comercial & Bazar',photoCredit:'I.J. COMERCIAL & BAZAR · Google Maps · 2023',photoSource:'https://www.google.com/maps?cid=6220956045641669487'},
+  'Montemadera San Bernardino': {photo:'montemadera-sanber-maps.jpg',photoAlt:'Cabaña de madera fabricada por Montemadera San Bernardino',photoCredit:'Montemadera - San Bernardino · Google Maps · feb 2023',photoSource:'https://www.google.com/maps?cid=1615824980365867896'},
+  'Muebles Rústicos Babi': {photo:'muebles-rusticos-babi-maps.jpg',photoAlt:'Hamaca de madera rústica fabricada por Muebles Rústicos Babi',photoCredit:'Muebles Rústicos Babi · Google Maps · 2024',photoSource:'https://www.google.com/maps?cid=9684840157841153060'},
+  'Coufa San Bernardino': {photo:'coufa-sanber-maps.jpg',photoAlt:'Fachada y letrero de la tienda de muebles Coufa San Bernardino',photoCredit:'Coufa San Bernardino · Google Maps · oct 2024',photoSource:'https://www.google.com/maps?cid=6451668211730801184'}
 };
 for(const item of businesses){
   const foto=fotosAmpliadas[item.name];

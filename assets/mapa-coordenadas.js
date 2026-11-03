@@ -84,5 +84,9 @@ const coordenadasMapa = {
   '4284988084291537985': {name:'Schlenz Import · Feria Austriaca',lat:-25.2944058,lng:-57.300134},
   '11827947771025004908': {name:'Tienda Nuestra Casa',lat:-25.295998,lng:-57.2689596},
   '11327865027185408623': {name:'Artesanías Carmencita Sanber',lat:-25.3105191,lng:-57.3011262},
-  '2559080416163216647': {name:'Ziba',lat:-25.3108421,lng:-57.3011969}
+  '2559080416163216647': {name:'Ziba',lat:-25.3108421,lng:-57.3011969},
+  '6220956045641669487': {name:'I.J. Comercial & Bazar',lat:-25.3041879,lng:-57.2986549},
+  '1615824980365867896': {name:'Montemadera San Bernardino',lat:-25.3204772,lng:-57.2848124},
+  '9684840157841153060': {name:'Muebles Rústicos Babi',lat:-25.289794,lng:-57.2677597},
+  '6451668211730801184': {name:'Coufa San Bernardino',lat:-25.2985859,lng:-57.3033906}
 };
