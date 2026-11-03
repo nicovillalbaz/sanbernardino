@@ -16,7 +16,7 @@ Abrir `http://127.0.0.1:8080/`. Para subirlo, copiar el contenido de esta carpet
 
 Cloudflare Pages toma la rama `main` del repositorio GitHub. La configuración es: sin framework, comando de compilación vacío, directorio de salida `.` y directorio raíz `/`. Cada cambio enviado a `main` crea una nueva publicación. La URL `pages.dev` es una prueba pública, no un piloto validado.
 
-Las siete páginas tienen título, descripción, URL canónica, Open Graph y tarjeta social; Inicio incluye datos estructurados `WebSite`. `robots.txt` permite el rastreo y `sitemap.xml` enumera las siete páginas. Al cambiar de dominio, ejecutar `node scripts/configurar-seo.js https://nuevo-dominio.example` y revisar los enlaces antes de enviar los archivos. Google Tag Manager y Search Console aún no están configurados en la cuenta del propietario; requieren el ID del contenedor y la verificación de la propiedad, respectivamente.
+Las siete páginas tienen título, descripción, URL canónica, Open Graph y tarjeta social; Inicio incluye datos estructurados `WebSite`. `robots.txt` permite el rastreo y `sitemap.xml` enumera las siete páginas. Al cambiar de dominio, ejecutar `node scripts/configurar-seo.js https://nuevo-dominio.example` y revisar los enlaces antes de enviar los archivos. El contenedor Google Tag Manager `GTM-W6FRFP9K` está instalado en las siete páginas con los fragmentos de `head` y `body`; `node scripts/configurar-gtm.js GTM-W6FRFP9K` reproduce esa instalación. Su funcionamiento y las etiquetas publicadas dentro del contenedor requieren prueba con Tag Assistant. Search Console sigue pendiente de verificación de la propiedad en la cuenta del propietario.
 
 ## Contenido
 
