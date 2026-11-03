@@ -1,0 +1,11 @@
+/* Profesionales se muestran en la misma grilla y con los mismos filtros que los negocios. */
+.professional-card{min-height:180px;border-top:3px solid #b54a38}
+.professional-card-group{display:block;margin-bottom:.9rem;color:#b54a38;font:700 .64rem/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase}
+.contact-card{display:flex;flex-direction:column;min-width:0;padding:1.25rem;border-right:1px solid #d3d9d2;border-bottom:1px solid #d3d9d2;border-left:1px solid #d3d9d2;background:#fffcf5}
+.contact-card h3{margin:0 0 .45rem;font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.15;overflow-wrap:anywhere;text-transform:none}
+.contact-card p{margin:0 0 1.2rem;color:#435d64;font:.84rem/1.45 var(--sans)}
+.contact-card a{display:inline-flex;align-items:center;min-height:44px;align-self:flex-start;margin-top:auto;padding:.5rem .8rem;border-radius:999px;background:#143d49;color:#fff;font:700 .75rem/1.2 var(--sans);text-decoration:none}
+.contact-card a:hover,.contact-card a:focus-visible{background:#b54a38}
+.contact-source{margin:1.5rem 0 0;color:#3d575d;font:500 .83rem/1.5 var(--sans)}
+.contact-source a{color:inherit;text-underline-offset:.2em}
+@media(max-width:650px){.professional-card{min-height:0}}

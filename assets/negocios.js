@@ -389,10 +389,20 @@ const detailedBusinessFilters = {
   cajeros: item => item.tags.includes('cajeros'),
   eventos: item => item.tags.includes('eventos')
 };
+const professionalGroups = {
+  'profesionales-hogar':'Hogar',
+  'profesionales-construccion':'Construcción',
+  'profesionales-movilidad':'Movilidad',
+  'profesionales-bienestar':'Bienestar',
+  'profesionales-oficios':'Oficios',
+  'profesionales-tecnologia':'Tecnología',
+  'profesionales-eventos':'Eventos'
+};
 const requestedBusinessFilter = new URLSearchParams(window.location.search).get('rubro');
 const requestedBusinessName = new URLSearchParams(window.location.search).get('negocio');
-let activeBusinessName = requestedBusinessName && businesses.some(item => !item.inactive && item.name === requestedBusinessName) ? requestedBusinessName : '';
-let activeBusinessFilter = businessFilters.some(button => button.dataset.businessFilter === requestedBusinessFilter) || requestedBusinessFilter in detailedBusinessFilters ? requestedBusinessFilter : 'todos';
+const requestedBusiness = businesses.find(item => !item.inactive && item.name === requestedBusinessName);
+let activeBusinessName = requestedBusiness?.name || '';
+let activeBusinessFilter = businessFilters.some(button => button.dataset.businessFilter === requestedBusinessFilter) || requestedBusinessFilter in detailedBusinessFilters ? requestedBusinessFilter : requestedBusiness?.category || 'comer';
 businessFilters.forEach(button => {
   const selected = button.dataset.businessFilter === activeBusinessFilter;
   button.classList.toggle('active', selected);
@@ -406,9 +416,35 @@ function addBusinessLink(parent, label, href, external=false){
   if(external){link.target='_blank';link.rel='noopener noreferrer'}
   parent.append(link);
 }
+function createProfessionalCard(item){
+  const card=document.createElement('article');card.className='contact-card professional-card';
+  const group=document.createElement('span');group.className='professional-card-group';group.textContent=item.grupo;
+  const heading=document.createElement('h3');heading.textContent=item.nombre;
+  const detail=document.createElement('p');detail.textContent=item.oficio;
+  const call=document.createElement('a');
+  const phone=item.telefono.replace(/\D/g,'');
+  call.href=`tel:${phone.startsWith('595')?'+':'+595'}${phone.startsWith('595')?phone:phone.replace(/^0/,'')}`;
+  call.textContent=`Llamar · ${item.telefono}`;
+  card.append(group,heading,detail,call);
+  return card;
+}
 function renderBusinesses(){
   if(!businessGrid || !businessCount || !businessEmpty) return;
-  const shown=businesses.filter(item => !item.inactive && (activeBusinessFilter==='todos'||item.category===activeBusinessFilter||detailedBusinessFilters[activeBusinessFilter]?.(item)) && (!activeBusinessName || item.name===activeBusinessName)).sort((a,b)=>businessCategoryOrder.indexOf(a.category)-businessCategoryOrder.indexOf(b.category) || Number(Boolean(b.photo))-Number(Boolean(a.photo)) || a.name.localeCompare(b.name,'es-PY'));
+  const professionalSource=document.getElementById('professional-source');
+  const professionalGroup=professionalGroups[activeBusinessFilter];
+  if(activeBusinessFilter==='profesionales'||professionalGroup){
+    const groupOrder=Object.values(professionalGroups);
+    const shown=profesionales.filter(item=>!professionalGroup||item.grupo===professionalGroup).sort((a,b)=>groupOrder.indexOf(a.grupo)-groupOrder.indexOf(b.grupo)||Number(b.nombre==='NAVZ')-Number(a.nombre==='NAVZ')||a.oficio.localeCompare(b.oficio,'es-PY')||a.nombre.localeCompare(b.nombre,'es-PY'));
+    const fragment=document.createDocumentFragment();
+    shown.forEach(item=>fragment.append(createProfessionalCard(item)));
+    businessGrid.replaceChildren(fragment);
+    businessCount.textContent=`${shown.length} ${shown.length===1?'contacto':'contactos'} · ${profesionales.length} profesionales en el directorio`;
+    businessEmpty.hidden=shown.length!==0;
+    if(professionalSource) professionalSource.hidden=false;
+    return;
+  }
+  if(professionalSource) professionalSource.hidden=true;
+  const shown=businesses.filter(item => !item.inactive && (item.category===activeBusinessFilter||detailedBusinessFilters[activeBusinessFilter]?.(item)) && (!activeBusinessName || item.name===activeBusinessName)).sort((a,b)=>businessCategoryOrder.indexOf(a.category)-businessCategoryOrder.indexOf(b.category) || Number(Boolean(b.photo))-Number(Boolean(a.photo)) || a.name.localeCompare(b.name,'es-PY'));
   const fragment=document.createDocumentFragment();
   shown.forEach(item=>{
     const card=document.createElement('article');card.className='business-card';
