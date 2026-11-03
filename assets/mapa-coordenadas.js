@@ -79,5 +79,10 @@ const coordenadasMapa = {
   '3783153878646473606': {name:'Cabañas Los Árboles',lat:-25.3013172,lng:-57.2928373},
   '13559258469821384734': {name:'Paseo del Centro',lat:-25.3098883,lng:-57.2999294},
   '469642837713770177': {name:'La Cumbre · San Bernardino',lat:-25.3069838,lng:-57.2980903},
-  '3877060139713095186': {name:'Ferretería Dos Hermanos',lat:-25.2783111,lng:-57.2614871}
+  '3877060139713095186': {name:'Ferretería Dos Hermanos',lat:-25.2783111,lng:-57.2614871},
+  '7876067637639472837': {name:'Boutique Sanber',lat:-25.3215784,lng:-57.2841741},
+  '4284988084291537985': {name:'Schlenz Import · Feria Austriaca',lat:-25.2944058,lng:-57.300134},
+  '11827947771025004908': {name:'Tienda Nuestra Casa',lat:-25.295998,lng:-57.2689596},
+  '11327865027185408623': {name:'Artesanías Carmencita Sanber',lat:-25.3105191,lng:-57.3011262},
+  '2559080416163216647': {name:'Ziba',lat:-25.3108421,lng:-57.3011969}
 };
