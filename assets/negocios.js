@@ -58,6 +58,7 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'MMUSA Depilación Láser': {photo:'mmusa-tratamiento-oficial.webp',photoAlt:'Profesional de MMusa realiza un tratamiento láser con equipo médico en una de sus sedes',photoCredit:'MMusa · fotografía institucional de tratamiento · sede no identificada',photoSource:'https://mmusadepilacionlaser.com/nosotros/'},
   'Asuká Sin Gluten San Bernardino': {photo:'asuka-pizza-los-jardines.jpg',photoAlt:'Pizza sin gluten de queso mozzarella de Asuká, publicada en el catálogo de Los Jardines',photoCredit:'Supermercado Los Jardines · fotografía del producto Asuká',photoSource:'https://www.losjardinesonline.com.py/pizza-asuka-de-queso-mozzarella-p79399'},
   'Happier': {photo:'happier-maps.jpg',photoAlt:'Plato de carne asada presentado por Happier',photoCredit:'Happier · Google Maps · mar 2021',photoSource:'https://www.google.com/maps?cid=2808506088986150315'},
   'MiniShop En Lo De Manu': {photo:'minishop-manu-evendo.webp',photoAlt:'Fachada nocturna presentada en la ficha de MiniShop En Lo De Manu',photoCredit:'Evendo · ficha de MiniShop En Lo De Manu · autor no identificado',photoSource:'https://evendo.com/locations/paraguay/san-bernardino/shop/minishop-en-lo-de-manu'},
