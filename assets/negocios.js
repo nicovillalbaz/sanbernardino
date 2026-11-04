@@ -60,6 +60,10 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Petrochaco · ex Gasur': {photo:'petrochaco-ex-gasur-maps.jpg',photoAlt:'Fachada de De Paso Shop en la estación Petrochaco ex Gasur, fotografiada en 2021',photoCredit:'Gasur Sanber · Google Maps · oct 2021',photoSource:'https://www.google.com/maps?cid=1039501923736469563'},
+  'Gomería La Ruta': {photo:'gomeria-la-ruta-maps.jpg',photoAlt:'Trabajo con una moto frente al taller de Gomería La Ruta',photoCredit:'Oscar Livieres · Google Maps · may 2021',photoSource:'https://www.google.com/maps?cid=5037511479345767868'},
+  'Gomería Kcell': {photo:'gomeria-kcell-maps.jpg',photoAlt:'Neumáticos y letrero de Kcell Gomería junto a la ruta',photoCredit:'Gomería kcell · Google Maps · nov 2024',photoSource:'https://www.google.com/maps?cid=14497930409382500299'},
+  'VillaCar Autodetail': {photo:'villacar-autodetail-maps.jpg',photoAlt:'Automóvil cubierto de espuma durante un lavado en VillaCar Autodetail',photoCredit:'VillaCar autodetail · Google Maps · ago 2023',photoSource:'https://www.google.com/maps?cid=340423910989183609'},
   'Puesto de Salud Familiar San Bernardino': {photo:'puesto-salud-familiar-maps.jpg',photoAlt:'Fachada del Puesto de Salud Familiar con el letrero USF Unidad de Salud de la Familia',photoCredit:'Tomás Martínez Mora · Google Maps · ago 2021',photoSource:'https://www.google.com/maps?cid=13630204168284794886'},
   'Centro Médico IMEL': {photo:'centro-medico-imel-maps.jpg',photoAlt:'Fachada del Centro Médico IMEL del Lago Sanber con su nombre en la vidriera',photoCredit:'Centro medico IMEL · Google Maps · ago 2023',photoSource:'https://www.google.com/maps?cid=13353887270053139553'},
   'Biggie Farma': {photo:'biggie-farma-street-view.jpg',photoAlt:'Fachada de Biggie Farma en la avenida Santiago Schaerer, fotografiada en octubre de 2024',photoCredit:'Google Street View · oct 2024',photoSource:'https://www.google.com/maps?cid=3420956358815933942'},
