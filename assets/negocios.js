@@ -60,6 +60,8 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Gomería Terry': {photo:'gomeria-terry-maps.jpg',photoAlt:'Letrero de Gomería Terry junto a neumáticos en su local',photoCredit:'Ever Sanabria · Google Maps · ene 2026',photoSource:'https://www.google.com/maps?cid=12945991583256716641'},
+  'Lavadero Andar': {photo:'lavadero-andar-maps.jpg',photoAlt:'Dos automóviles en el área de lavado de Lavadero ANDAR',photoCredit:'raul alberto maria andrada argaña · Google Maps · nov 2024',photoSource:'https://www.google.com/maps?cid=7345057376894683966'},
   'Petrochaco · ex Gasur': {photo:'petrochaco-ex-gasur-maps.jpg',photoAlt:'Fachada de De Paso Shop en la estación Petrochaco ex Gasur, fotografiada en 2021',photoCredit:'Gasur Sanber · Google Maps · oct 2021',photoSource:'https://www.google.com/maps?cid=1039501923736469563'},
   'Gomería La Ruta': {photo:'gomeria-la-ruta-maps.jpg',photoAlt:'Trabajo con una moto frente al taller de Gomería La Ruta',photoCredit:'Oscar Livieres · Google Maps · may 2021',photoSource:'https://www.google.com/maps?cid=5037511479345767868'},
   'Gomería Kcell': {photo:'gomeria-kcell-maps.jpg',photoAlt:'Neumáticos y letrero de Kcell Gomería junto a la ruta',photoCredit:'Gomería kcell · Google Maps · nov 2024',photoSource:'https://www.google.com/maps?cid=14497930409382500299'},
