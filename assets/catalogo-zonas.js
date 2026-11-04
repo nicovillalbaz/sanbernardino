@@ -75,7 +75,7 @@ catalogoZonas.push(
   {name:'Barrio Cerrado Larán Riego',category:'inmuebles',type:'Barrio cerrado',area:'San Bernardino',tags:['barrios'],maps:mapaCid('0x89f3ffd1f917c2de')},
   {name:'Terrenos SanBer',category:'inmuebles',type:'Urbanización',area:'San Bernardino',tags:['loteamientos'],maps:mapaCid('0x6b0976a3e327e147')},
   {name:'Urbanización SADI',category:'inmuebles',type:'Urbanización',area:'San Bernardino',tags:['loteamientos'],maps:mapaCid('0x9ce73c899852c6c')},
-  {name:'Sol de Verano',category:'inmuebles',type:'Urbanización',area:'San Bernardino',tags:['loteamientos'],maps:mapaCid('0xf72b928a00516d81')},
+  {name:'Sol de Verano',category:'inmuebles',type:'Urbanización',area:'San Bernardino',tags:['loteamientos'],photo:'assets/images/sol-de-verano-maps.jpg',photoAlt:'Entrada de la Urbanización Sol de Verano con su cartel',photoCredit:'Google Maps · Jovina Romero · feb 2019',photoSource:'https://www.google.com/maps?cid=17810490272775236993',maps:mapaCid('0xf72b928a00516d81')},
   {name:'La Soñada',category:'inmuebles',type:'Complejo residencial',area:'San Bernardino',tags:['barrios'],maps:mapaCid('0x6c1f551b563e9f0c')},
   {name:'La Roca',category:'inmuebles',type:'Complejo residencial',area:'San Bernardino',tags:['barrios'],maps:mapaCid('0x2ceace8ad82c9c50')},
   {name:'Condominio Ayres de Sanber',category:'inmuebles',type:'Condominio',area:'Avenida Ciervo Cuá',tags:['barrios'],phone:'0986 963533',maps:mapaCid('0xfd4c65233392d60b')},
