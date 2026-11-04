@@ -22,7 +22,7 @@ const linkedCids = new Set(businesses.map(item => (item.maps || '').match(/[?&]c
 const pinErrors = Object.entries(coordinates).flatMap(([cid, point]) => {
   const errors = [];
   if (!linkedCids.has(cid)) errors.push(`CID ${cid}: ninguna ficha activa enlaza esta ubicación`);
-  if (!Number.isFinite(point.lat) || !Number.isFinite(point.lng) || point.lat < -25.39 || point.lat > -25.225 || point.lng < -57.36 || point.lng > -57.215) {
+  if (!Number.isFinite(point.lat) || !Number.isFinite(point.lng) || point.lat < -25.39 || point.lat > -25.19 || point.lng < -57.36 || point.lng > -57.215) {
     errors.push(`CID ${cid}: coordenadas fuera del área del mapa`);
   }
   return errors;

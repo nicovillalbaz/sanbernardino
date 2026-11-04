@@ -13,7 +13,7 @@ for (const file of ['catalogo-ampliado.js', 'catalogo-revision.js', 'catalogo-ru
 }
 const {businesses, places, coordinates} = vm.runInContext('({businesses:businesses.filter(item=>!item.inactive),places:lugaresMapa,coordinates:coordenadasMapa})', context);
 const errors = [];
-const boundary = {south:-25.39,north:-25.225,west:-57.36,east:-57.215};
+const boundary = {south:-25.39,north:-25.19,west:-57.36,east:-57.215};
 const inside = (lat,lng) => Number.isFinite(lat) && Number.isFinite(lng) && lat >= boundary.south && lat <= boundary.north && lng >= boundary.west && lng <= boundary.east;
 const cidOf = url => url?.match(/[?&]cid=(\d+)/)?.[1];
 const urlCoords = url => url?.match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/) || url?.match(/[?&]q=loc:(-?\d+\.\d+),(-?\d+\.\d+)/);

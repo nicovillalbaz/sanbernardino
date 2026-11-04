@@ -40,7 +40,7 @@
   }).filter(Boolean);
   const placePoints = lugaresMapa.map(item => ({...item,kind:'lugar',category:'lugares'}));
   const points = [...placePoints,...businessPoints];
-  const boundary = L.latLngBounds([[-25.39,-57.36],[-25.225,-57.215]]);
+  const boundary = L.latLngBounds([[-25.39,-57.36],[-25.19,-57.215]]);
   const map = L.map(canvas,{center:[-25.314,-57.286],zoom:12,minZoom:11,maxZoom:18,maxBounds:boundary,maxBoundsViscosity:1,zoomControl:false,worldCopyJump:false});
   L.control.zoom({position:'topright',zoomInTitle:'Acercar',zoomOutTitle:'Alejar'}).addTo(map);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
