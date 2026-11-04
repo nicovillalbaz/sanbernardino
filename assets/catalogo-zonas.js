@@ -341,7 +341,7 @@ const enlacesMapsExactos = {
   'Tía Laura San Ber':'0x1bf859c6a608db6b',
   'TAVA Glamping Cerro':'0xe57f6f5622e1f270',
   'Oasis Dream Spa':'0xcdb1fe467fdb37b0',
-  'TAVA Wellness':'0xe57f6f5622e1f270',
+  'TAVA Wellness':'0xded13d80dfd35698',
   'Beauty&Spa Siempre Bella':'0xf96a0f1dc3b5097e',
   'Lizza Depilaciones San Ber':'0x363ecec9ee2b63e5',
   'La Bodega del Mundo · San Bernardino':'0x154e1acbf07caed9',

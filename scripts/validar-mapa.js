@@ -30,7 +30,7 @@ for (const item of businesses) {
     if (!inside(lat,lng)) errors.push(`${item.name}: coordenadas fuera del área`);
     if (saved) {
       usedCids.add(cid);
-      if (saved.name !== item.name) errors.push(`${item.name}: CID atribuido a ${saved.name}`);
+      if (saved.name !== item.name && !saved.aliases?.includes(item.name)) errors.push(`${item.name}: CID atribuido a ${saved.name}`);
     }
   }
 }

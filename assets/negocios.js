@@ -58,6 +58,7 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Clínica del Lago': {photo:'clinica-del-lago-maps.jpg',photoAlt:'Consultorio de Clínica del Lago con camilla y equipo médico',photoCredit:'karina paniagua · Google Maps · dic 2020',photoSource:'https://www.google.com/maps?cid=13169052587248394210'},
   'MMUSA Depilación Láser': {photo:'mmusa-tratamiento-oficial.webp',photoAlt:'Profesional de MMusa realiza un tratamiento láser con equipo médico en una de sus sedes',photoCredit:'MMusa · fotografía institucional de tratamiento · sede no identificada',photoSource:'https://mmusadepilacionlaser.com/nosotros/'},
   'Asuká Sin Gluten San Bernardino': {photo:'asuka-pizza-los-jardines.jpg',photoAlt:'Pizza sin gluten de queso mozzarella de Asuká, publicada en el catálogo de Los Jardines',photoCredit:'Supermercado Los Jardines · fotografía del producto Asuká',photoSource:'https://www.losjardinesonline.com.py/pizza-asuka-de-queso-mozzarella-p79399'},
   'Happier': {photo:'happier-maps.jpg',photoAlt:'Plato de carne asada presentado por Happier',photoCredit:'Happier · Google Maps · mar 2021',photoSource:'https://www.google.com/maps?cid=2808506088986150315'},

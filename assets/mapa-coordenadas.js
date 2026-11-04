@@ -28,7 +28,7 @@ const coordenadasMapa = {
   '14796873429309735915': {name:'La Soñada Sanber',lat:-25.3451717,lng:-57.2637575},
   '3542671009853699448': {name:'Casa Avelina',lat:-25.3596678,lng:-57.2824943},
   '16023365926195456922': {name:'La Paloma Sanber',lat:-25.326279,lng:-57.2785962},
-  '16055681770272806552': {name:'TAVA Glamping Lago',lat:-25.350703,lng:-57.2833627},
+  '16055681770272806552': {name:'TAVA Glamping Lago',aliases:['TAVA Wellness'],lat:-25.350703,lng:-57.2833627},
   '18252074591689299467': {name:'Condominio Ayres de Sanber',lat:-25.2917163,lng:-57.3018548},
   '4929861330721419509': {name:'Condominio Puntasánber',lat:-25.2881648,lng:-57.2664632},
   '14751989014792520778': {name:'Condominio Terrazas del Lago',lat:-25.2868527,lng:-57.2643978},
@@ -174,5 +174,11 @@ const coordenadasMapa = {
   '15099234920591849968': {name:'Lavandería AO Johei Sanber',lat:-25.3089852,lng:-57.2986091},
   '12449271638573459014': {name:'Laundry San Bernardino',lat:-25.3072488,lng:-57.2981022},
   '15194842377453628335': {name:'Cavalava San Bernardino',lat:-25.3051429,lng:-57.2950503},
-  '1305342799539723044': {name:'La Chusquita',lat:-25.3348976,lng:-57.2601845}
+  '1305342799539723044': {name:'La Chusquita',lat:-25.3348976,lng:-57.2601845},
+  '1232859159549815243': {name:'Cutbarber Unisex',lat:-25.3067213,lng:-57.2977265},
+  '4425068738969368972': {name:'Bazar Los Contenedores',lat:-25.294287,lng:-57.3000951},
+  '10434767908951130134': {name:'Inmobiliaria Esteche',lat:-25.3098217,lng:-57.2995685},
+  '9042296745776632120': {name:'Guinide',lat:-25.3092407,lng:-57.2949041},
+  '2257847710873192572': {name:'Glam Lifestyle',lat:-25.3326801,lng:-57.2750471},
+  '17952128024102614539': {name:'Quinta Manolo',lat:-25.3378621,lng:-57.2680799}
 };
