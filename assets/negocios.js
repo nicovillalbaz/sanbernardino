@@ -39,7 +39,9 @@ function publicBusinessText(value) {
 const negociosOcultos = new Set([
   'Despensa Karina', 'Bodega Boutique San Bernardino',
   'Cangre Burger', 'Don Vito Original · Vaché', 'Yogurberry San Bernardino',
-  'La Bodega del Mundo · San Bernardino'
+  'La Bodega del Mundo · San Bernardino',
+  // El CID ya no abre una ficha; la búsqueda local de Maps no identifica esta cancha.
+  'Villa Padel'
 ]);
 const negociosCercanos = {
   'Apart Hotel Il Faro':'Ypacaraí',
@@ -58,6 +60,11 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Amandau · Centro': {photo:'amandau-centro-producto-maps.jpg',photoAlt:'Copa Mix de la marca Amandau, imagen de producto y no del local',photoCredit:'PedidosYa · Google Maps · producto Amandau',photoSource:'https://www.google.com/maps?cid=12901422928985482935'},
+  'El Cervecero': {photo:'el-cervecero-maps.jpg',photoAlt:'Interior de El Cervecero con heladeras y bebidas',photoCredit:'EDMR · Google Maps · nov 2023',photoSource:'https://www.google.com/maps?cid=2882811010107106867'},
+  'Farmatotal · Wenceslao López': {photo:'farmatotal-wenceslao-maps.jpg',photoAlt:'Entrada de Farmatotal en Wenceslao López con el cartel Yo amo San Ber',photoCredit:'Juan Alberto Oviedo Elias · Google Maps · jul 2025',photoSource:'https://www.google.com/maps?cid=8857810752460085697'},
+  'Malari Cosméticos': {photo:'malari-cosmeticos-instagram.jpg',photoAlt:'Estantes de cosméticos en el local Malari de San Bernardino',photoCredit:'Dianela Vergara Leite · Instagram de Malari · oct 2026',photoSource:'https://www.instagram.com/dianela_vergara_leite/reel/De5Chk0zv_l/'},
+  'BORA': {photo:'bora-instagram.jpg',photoAlt:'DJ y público durante una noche en BORA San Bernardino',photoCredit:'BORA · Instagram · ene 2026',photoSource:'https://www.instagram.com/bora_sanber/p/DUHGXOFDyCL/'},
   'ueno bank x San Bernardino': {photo:'ueno-bank-san-bernardino-maps.jpg',photoAlt:'Entrada de la sucursal ueno bank en San Bernardino',photoCredit:'ueno bank x San Bernardino · Google Maps · nov 2025',photoSource:'https://www.google.com/maps?cid=1898060168394686712'},
   'ATM Itaú · San Bernardino': {photo:'atm-itau-san-bernardino-maps.jpg',photoAlt:'Señal de cajero Itaú en San Bernardino',photoCredit:'Jorge Gyökér · Google Maps · sept 2023',photoSource:'https://www.google.com/maps?cid=12472334103337078069'},
   'Taller Oscar': {photo:'taller-oscar-maps.jpg',photoAlt:'Fachada roja del Taller Oscar con el cartel STIHL',photoCredit:'Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=9957614792697230653'},
