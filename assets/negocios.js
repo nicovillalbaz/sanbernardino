@@ -58,6 +58,12 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Atenas Cotillón': {photo:'atenas-cotillon-maps.jpg',photoAlt:'Cartel de Atenas Cotillón frente a su local en San Bernardino',photoCredit:'Atenas Cotillon · Google Maps · mar 2026',photoSource:'https://www.google.com/maps?cid=10133659633913834754'},
+  'Reyna Esther': {photo:'reyna-esther-maps.jpg',photoAlt:'Interior de la boutique Reyna Esther con prendas y accesorios exhibidos',photoCredit:'Xpert360 Paraguay · Google Maps · oct 2026',photoSource:'https://www.google.com/maps?cid=8636447318147549497'},
+  'Sanber Padel Tour': {photo:'sanber-padel-tour-maps.jpg',photoAlt:'Dos personas juegan en la cancha azul de Sanber Padel Tour',photoCredit:'Alan Tauber · Google Maps · mar 2022',photoSource:'https://www.google.com/maps?cid=17281460011174082503'},
+  'Mayco': {photo:'mayco-maps.jpg',photoAlt:'Cantero de flores de colores publicado por el vivero MAYCO',photoCredit:'MAYCO · Google Maps · ago 2022',photoSource:'https://www.google.com/maps?cid=15335235451261795394'},
+  'El Cucurucho': {photo:'el-cucurucho-maps.jpg',photoAlt:'Postre de helado con chocolate servido en El Cucurucho',photoCredit:'Lila Giménez Cabrera · Google Maps · nov 2021',photoSource:'https://www.google.com/maps?cid=10385690797154838337'},
+  'Santa Isabel': {photo:'santa-isabel-maps.jpg',photoAlt:'Fachada de la panadería Santa Isabel y su letrero',photoCredit:'Leo Elizeche · Google Maps · dic 2021',photoSource:'https://www.google.com/maps?cid=13193329632094156616'},
   'Turopasanber 2.0': {photo:'turopasanber-2-maps.jpg',photoAlt:'Vidriera y ropa exhibida en el local de Turopasanber 2.0',photoCredit:'Turopasanber 2.0 · Google Maps · abr 2026',photoSource:'https://www.google.com/maps?cid=11392193712577112032'},
   'Clínica del Lago': {photo:'clinica-del-lago-maps.jpg',photoAlt:'Consultorio de Clínica del Lago con camilla y equipo médico',photoCredit:'karina paniagua · Google Maps · dic 2020',photoSource:'https://www.google.com/maps?cid=13169052587248394210'},
   'MMUSA Depilación Láser': {photo:'mmusa-tratamiento-oficial.webp',photoAlt:'Profesional de MMusa realiza un tratamiento láser con equipo médico en una de sus sedes',photoCredit:'MMusa · fotografía institucional de tratamiento · sede no identificada',photoSource:'https://mmusadepilacionlaser.com/nosotros/'},

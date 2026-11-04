@@ -245,5 +245,16 @@ const coordenadasMapa = {
   '18158203719678008845': {name:'Lavadero de Autos · San Bernardino',lat:-25.2984612,lng:-57.30409},
   '1401397474131953735': {name:'Alquimia Kue',lat:-25.3014046,lng:-57.2948342},
   '10813122209170981019': {name:'Lavadero 44',lat:-25.3428313,lng:-57.2742392},
-  '11392193712577112032': {name:'Turopasanber 2.0',lat:-25.3277965,lng:-57.2839631}
+  '11392193712577112032': {name:'Turopasanber 2.0',lat:-25.3277965,lng:-57.2839631},
+  '17281460011174082503': {name:'Sanber Padel Tour',lat:-25.3296693,lng:-57.273417},
+  '9771443063492655206': {name:'Quinta El Búho',lat:-25.2423957,lng:-57.3264355},
+  '9300910376181656699': {name:'Mujica’s Summer House · Quinta y Eventos',lat:-25.3494237,lng:-57.2311199},
+  '1116854900432128741': {name:'Club 3 de Febrero',lat:-25.3234601,lng:-57.2766447},
+  '16725733443202900395': {name:'Club Atlético Juventud Ciervo Cuá',lat:-25.2419736,lng:-57.3118718},
+  '4028940151628344238': {name:'Complejo El Peluche',lat:-25.3328821,lng:-57.2524632},
+  '17657897732259868768': {name:'Cancha de Fede',lat:-25.3061057,lng:-57.2920637},
+  '11694509834548371691': {name:'Circuito de Cantegrill',lat:-25.3510459,lng:-57.2768784},
+  '795024523805338166': {name:'Jessi Ropas Americanas',lat:-25.3279781,lng:-57.2842622},
+  '8636447318147549497': {name:'Reyna Esther',lat:-25.3069408,lng:-57.2980341},
+  '10133659633913834754': {name:'Atenas Cotillón',lat:-25.3373495,lng:-57.2731501}
 };
