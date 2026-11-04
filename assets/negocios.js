@@ -58,6 +58,12 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'ueno bank x San Bernardino': {photo:'ueno-bank-san-bernardino-maps.jpg',photoAlt:'Entrada de la sucursal ueno bank en San Bernardino',photoCredit:'ueno bank x San Bernardino · Google Maps · nov 2025',photoSource:'https://www.google.com/maps?cid=1898060168394686712'},
+  'ATM Itaú · San Bernardino': {photo:'atm-itau-san-bernardino-maps.jpg',photoAlt:'Señal de cajero Itaú en San Bernardino',photoCredit:'Jorge Gyökér · Google Maps · sept 2023',photoSource:'https://www.google.com/maps?cid=12472334103337078069'},
+  'Taller Oscar': {photo:'taller-oscar-maps.jpg',photoAlt:'Fachada roja del Taller Oscar con el cartel STIHL',photoCredit:'Google Maps · jul 2021',photoSource:'https://www.google.com/maps?cid=9957614792697230653'},
+  'Barrio Cerrado Villa Las Mercedes': {photo:'villa-las-mercedes-maps.jpg',photoAlt:'Cartel de ingreso del Barrio Cerrado Villa Las Mercedes',photoCredit:'Diego Cabrera Muñoz · Google Maps · nov 2025',photoSource:'https://www.google.com/maps?cid=17873399427603429794'},
+  'Fibras y Artes': {photo:'fibras-y-artes-maps.jpg',photoAlt:'Imagen promocional de una piscina Fibrac publicada por Fibras y Artes',photoCredit:'Fibras y Artes · Google Maps · ene 2023',photoSource:'https://www.google.com/maps?cid=9377793274150203920'},
+  'Complejo Endurero y Trialero Don Ovidio': {photo:'complejo-endurero-don-ovidio-maps.jpg',photoAlt:'Motocicleta de enduro y participante en un sendero del complejo',photoCredit:'Manu Villasanti · Google Maps · oct 2022',photoSource:'https://www.google.com/maps?cid=6588582522524404147'},
   'Atenas Cotillón': {photo:'atenas-cotillon-maps.jpg',photoAlt:'Cartel de Atenas Cotillón frente a su local en San Bernardino',photoCredit:'Atenas Cotillon · Google Maps · mar 2026',photoSource:'https://www.google.com/maps?cid=10133659633913834754'},
   'Reyna Esther': {photo:'reyna-esther-maps.jpg',photoAlt:'Interior de la boutique Reyna Esther con prendas y accesorios exhibidos',photoCredit:'Xpert360 Paraguay · Google Maps · oct 2026',photoSource:'https://www.google.com/maps?cid=8636447318147549497'},
   'Sanber Padel Tour': {photo:'sanber-padel-tour-maps.jpg',photoAlt:'Dos personas juegan en la cancha azul de Sanber Padel Tour',photoCredit:'Alan Tauber · Google Maps · mar 2022',photoSource:'https://www.google.com/maps?cid=17281460011174082503'},
