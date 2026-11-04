@@ -60,6 +60,7 @@ for (const item of businesses) {
   if (item.name === 'Tía Laura San Ber') { item.area = 'Avenida Guillermo Naumann'; item.phone = '0985 273222'; }
 }
 const fotosAmpliadas = {
+  'Biggie Farma': {photo:'biggie-farma-street-view.jpg',photoAlt:'Fachada de Biggie Farma en la avenida Santiago Schaerer, fotografiada en octubre de 2024',photoCredit:'Google Street View · oct 2024',photoSource:'https://www.google.com/maps?cid=3420956358815933942'},
   'Casa Quinta Paredes': {photo:'casa-quinta-paredes-airbnb.jpg',photoAlt:'Pileta de Casa Quinta Paredes publicada en su anuncio de alojamiento',photoCredit:'Casa Quinta Paredes · Airbnb · anuncio 1455755559659261226',photoSource:'https://www.airbnb.com.py/rooms/1455755559659261226'},
   'Hierropar San Bernardino': {photo:'hierropar-san-bernardino-ggyc.jpg',photoAlt:'Fachada de la sucursal Hierropar en San Bernardino',photoCredit:'Greco Gregor & Cubilla Constructora · fotografía de la sucursal',photoSource:'https://ggyc.com.py/portfolio/hierropar-sucursal-san-bernardino/'},
   'Amandau · Centro': {photo:'amandau-centro-producto-maps.jpg',photoAlt:'Copa Mix de la marca Amandau, imagen de producto y no del local',photoCredit:'PedidosYa · Google Maps · producto Amandau',photoSource:'https://www.google.com/maps?cid=12901422928985482935'},
