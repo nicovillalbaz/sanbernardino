@@ -4,7 +4,7 @@ Actualizado el 06/11/2026. **132 pendientes** de 511 fichas activas; 2 completad
 
 ## Cómo mantenerlo
 
-1. Abrir el enlace de Maps de una ficha sin foto y comprobar que la imagen retrata ese negocio concreto.
+1. Abrir el enlace de Maps de una ficha sin foto, revisar su vigencia en `VIGENCIA-NEGOCIOS.md` y comprobar que la imagen retrata ese negocio concreto. Un horario de Maps no demuestra operación actual.
 2. Añadir el archivo y los campos `photo`, `photoAlt`, `photoCredit` y `photoSource` a la ficha.
 3. Ejecutar `node scripts/generar-cobertura.js`. El generador marca automáticamente `[x]` si la imagen existe y los cuatro campos están completos; conserva las fichas ya marcadas para ver el avance.
 4. Ejecutar `node scripts/validar-catalogo.js` y `node scripts/auditar-cobertura-integral.js`.
@@ -13,7 +13,7 @@ Si se agrega una ficha nueva sin imagen, aparecerá aquí al regenerar. Si una f
 
 ## Comer y tomar · 15 pendientes
 
-- [ ] **Comedor Wilma** · [Maps](https://www.google.com/maps/place/Comedor+Wilma/data=!4m7!3m6!1s0x945db52804232e1d:0xb1f482fa20007a67!8m2!3d-25.3037587!4d-57.2983289!16s%2Fg%2F11lm1fg1pw) · _Maps revisado 06/11/2026: el enlace ya no abrió una ficha identificable; la antigua foto de reseña no mostraba el comedor_
+- [ ] **Comedor Wilma** · [Maps](https://www.google.com/maps/place/Comedor+Wilma/data=!4m7!3m6!1s0x945db52804232e1d:0xb1f482fa20007a67!8m2!3d-25.3037587!4d-57.2983289!16s%2Fg%2F11lm1fg1pw) · _Maps revisado 06/11/2026: el enlace directo no abrió la ficha, pero la búsqueda por nombre sí; la antigua foto de reseña no mostraba el comedor_
 - [ ] **Pizzanber** · [Maps](https://www.google.com/maps/place/Pizzanber/data=!4m7!3m6!1s0x945db57c91627189:0x2a32c5bec9c10d34!8m2!3d-25.3059106!4d-57.295969!16s%2Fg%2F11r_fm4_f7)
 - [ ] **Dulces Doña Margarita** · [Maps](https://www.google.com/maps/place/Dulces+Do%C3%B1a+Margarita/data=!4m7!3m6!1s0x945db5160a2d7adf:0xcf18f0baff9d9325!8m2!3d-25.3121492!4d-57.292196!16s%2Fg%2F11nxtcg4xp)
 - [ ] **Bollería El Auténtico** · [Maps](https://www.google.com/maps/place/Boller%C3%ADa+el+Auntentico/data=!4m7!3m6!1s0x945db5e39264d889:0x7ce0123782547af!8m2!3d-25.306919!4d-57.2987128!16s%2Fg%2F11syzb3n0h)
@@ -135,7 +135,7 @@ Si se agrega una ficha nueva sin imagen, aparecerá aquí al regenerar. Si una f
 
 ## Hogar · 3 pendientes
 
-- [ ] **Ferretería Carlitos · norte** · [Maps](https://www.google.com/maps/place/Ferreter%C3%ADa+Carlitos,+san+Bernardino+Cordillera/data=!4m7!3m6!1s0x945dc920ba2b8e8b:0x71017061f6e93232!8m2!3d-25.2647881!4d-57.2489926!16s%2Fg%2F11hzzfb8mz) · _Maps revisado 06/11/2026: el enlace lleva a un mapa vacío; revisar la existencia y el punto_
+- [ ] **Ferretería Carlitos · norte** · [Maps](https://www.google.com/maps/place/Ferreter%C3%ADa+Carlitos,+san+Bernardino+Cordillera/data=!4m7!3m6!1s0x945dc920ba2b8e8b:0x71017061f6e93232!8m2!3d-25.2647881!4d-57.2489926!16s%2Fg%2F11hzzfb8mz) · _Maps revisado 06/11/2026: el enlace directo lleva a un mapa vacío, pero la búsqueda por nombre recupera la ficha de Altos con horario y teléfono; falta foto identificable_
 - [x] **Distri Sanitarios y Artículos de Ferretería** · [Maps](https://www.google.com/maps/place/Distri+Sanitarios+y+Art+Ferreter%C3%ADa/data=!4m7!3m6!1s0x945dcb17fa5b5405:0xfc6fc033eb47bb70!8m2!3d-25.3333861!4d-57.2516252!16s%2Fg%2F11k11psq_f) · [Foto](assets/images/distri-sanitarios-maps.jpg)
 - [ ] **Lincoln** · [Maps](https://www.google.com/maps?cid=8362229072618969328)
 - [ ] **RYM Sanitarios** · [Maps](https://www.google.com/maps?cid=2153883211116197465)

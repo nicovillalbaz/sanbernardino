@@ -44,6 +44,8 @@ La vista de Negocios fue revisada anteriormente en Chrome a 280, 320 y 390 px. L
 
 Para trabajar solo sobre las fichas sin imagen, usar [PENDIENTES-FOTOS.md](PENDIENTES-FOTOS.md). El mismo comando `node scripts/generar-cobertura.js` actualiza ese checklist: marca como completadas las fichas a las que se añadió una foto local con texto alternativo, crédito y fuente, e incorpora las nuevas fichas sin imagen.
 
+La vigencia comercial se controla por separado en [VIGENCIA-NEGOCIOS.md](VIGENCIA-NEGOCIOS.md), generado con `node scripts/generar-vigencia.js`. Los hallazgos fechados están en `data/vigencia-revisiones.json`; ninguna ficha de Maps por sí sola acredita que el negocio siga atendiendo. La revisión por rubro continúa abierta y no se envía a producción con cada anotación.
+
 ## Estado editorial
 
 Implementación local y publicación técnica de prueba en Cloudflare Pages; sin piloto validado. La [revisión territorial](../docs/iniciativas/san-bernardino/15-barrido-territorial.md) amplió la [pasada por rubros](../docs/iniciativas/san-bernardino/14-revision-por-rubros.md), corrigió enlaces heredados a puntos concretos de Maps y distinguió negocios de municipios próximos con la etiqueta «Cerca de San Ber». Se mantienen cierres temporales, que pueden ser estacionales, y se ocultan cierres permanentes. Los contactos son públicos en las fuentes indicadas. El directorio no acredita por sí solo apertura, horarios o disponibilidad. Los eventos caducan en el navegador al superar `expires`; para agregar uno, editar `assets/agenda.js` con fecha, sede, fuente y vencimiento.

@@ -34,7 +34,7 @@ const date = new Intl.DateTimeFormat('es-PY', {timeZone: 'America/Asuncion', day
 let markdown = `# Fichas pendientes de foto\n\n` +
   `Actualizado el ${date}. **${pending} pendientes** de ${businesses.length} fichas activas; ${tracked.length - pending} completadas desde que empezó este checklist. El catálogo y sus fuentes son la referencia: este archivo es una lista de trabajo, no una galería pública.\n\n` +
   `## Cómo mantenerlo\n\n` +
-  `1. Abrir el enlace de Maps de una ficha sin foto y comprobar que la imagen retrata ese negocio concreto.\n` +
+  `1. Abrir el enlace de Maps de una ficha sin foto, revisar su vigencia en \`VIGENCIA-NEGOCIOS.md\` y comprobar que la imagen retrata ese negocio concreto. Un horario de Maps no demuestra operación actual.\n` +
   `2. Añadir el archivo y los campos \`photo\`, \`photoAlt\`, \`photoCredit\` y \`photoSource\` a la ficha.\n` +
   `3. Ejecutar \`node scripts/generar-cobertura.js\`. El generador marca automáticamente \`[x]\` si la imagen existe y los cuatro campos están completos; conserva las fichas ya marcadas para ver el avance.\n` +
   `4. Ejecutar \`node scripts/validar-catalogo.js\` y \`node scripts/auditar-cobertura-integral.js\`.\n\n` +
