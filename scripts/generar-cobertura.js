@@ -44,3 +44,4 @@ for (const [category, title] of sections) {
 const target = path.resolve(root, '../docs/iniciativas/san-bernardino/12-cobertura-fichas.md');
 fs.writeFileSync(target, markdown, 'utf8');
 console.log(`${businesses.length} fichas, ${photographed} con foto, ${businesses.length - photographed} sin foto local`);
+require('./generar-pendientes-fotos.js');
