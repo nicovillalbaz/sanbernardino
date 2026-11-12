@@ -1,6 +1,6 @@
 # San Bernardino · guía local
 
-Sitio estático, sin marca pública definitiva. Tiene portada, historia, lugares, actividades, agenda, directorio, mapa y créditos. La publicación principal está en `https://sanber.top/`, servida desde el VPS por Caddy; la versión anterior de `https://sanbernardino.pages.dev/` sigue disponible. No requiere compilación ni base de datos.
+Sitio estático, sin marca pública definitiva. Tiene portada, historia, lugares, actividades, agenda, directorio, mapa y créditos. La publicación principal funciona en el VPS bajo `https://sanber.top/`; `https://www.sanber.top/` redirige al dominio principal. La versión anterior de `https://sanbernardino.pages.dev/` sigue disponible. No requiere compilación ni base de datos.
 
 ## Abrir en local
 
