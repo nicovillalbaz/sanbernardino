@@ -1,0 +1,9 @@
+sanber.top {
+    root * /srv/sanber/current
+    encode zstd gzip
+    file_server
+}
+
+www.sanber.top {
+    redir https://sanber.top{uri} permanent
+}

@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const root = path.resolve(__dirname, '..');
-const origin = (process.argv[2] || 'https://sanbernardino.pages.dev').replace(/\/+$/, '');
+const origin = (process.argv[2] || 'https://sanber.top').replace(/\/+$/, '');
 const pages = [
   'index.html', 'actividades.html', 'lugares.html', 'negocios.html',
   'mapa.html', 'historia.html', 'creditos.html'

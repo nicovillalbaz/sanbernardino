@@ -1,6 +1,6 @@
 # San Bernardino · guía local
 
-Sitio estático, sin marca pública definitiva. Tiene portada, historia, lugares, actividades, agenda, directorio, mapa y créditos. El código está conectado a GitHub y tiene una publicación de prueba en `https://sanbernardino.pages.dev/`; no requiere compilación ni base de datos.
+Sitio estático, sin marca pública definitiva. Tiene portada, historia, lugares, actividades, agenda, directorio, mapa y créditos. La publicación principal está en `https://sanber.top/`, servida desde el VPS por Caddy; la versión anterior de `https://sanbernardino.pages.dev/` sigue disponible. No requiere compilación ni base de datos.
 
 ## Abrir en local
 
@@ -14,7 +14,9 @@ Abrir `http://127.0.0.1:8080/`. Para subirlo, copiar el contenido de esta carpet
 
 ## Publicación y búsqueda
 
-Cloudflare Pages toma la rama `main` del repositorio GitHub. La configuración es: sin framework, comando de compilación vacío, directorio de salida `.` y directorio raíz `/`. Cada cambio enviado a `main` crea una nueva publicación. La URL `pages.dev` es una prueba pública, no un piloto validado.
+La publicación principal se genera localmente y se copia al VPS; un push a GitHub no la actualiza por sí solo. Cloudflare Pages conserva la rama `main` anterior como publicación de prueba, con configuración sin framework, comando de compilación vacío, directorio de salida `.` y directorio raíz `/`. Cada push a `main` genera una nueva publicación de Pages, por lo que no hacer push durante cada ajuste local.
+
+Para el VPS se prepara un paquete con solo archivos públicos mediante `node scripts/preparar-vps.js <directorio-nuevo>` y se comprueba con `node scripts/validar-paquete-vps.js <directorio>`. El bloque de Caddy separado está en [deploy/sanber.caddy](deploy/sanber.caddy); los pasos y el estado de la migración están en [deploy/README.md](deploy/README.md). No enviar `.git`, `exports/`, documentación de trabajo ni scripts al directorio web.
 
 Las siete páginas tienen título, descripción, URL canónica, Open Graph y tarjeta social; Inicio incluye datos estructurados `WebSite`. `robots.txt` permite el rastreo y `sitemap.xml` enumera las siete páginas. Al cambiar de dominio, ejecutar `node scripts/configurar-seo.js https://nuevo-dominio.example` y revisar los enlaces antes de enviar los archivos. El contenedor Google Tag Manager `GTM-W6FRFP9K` está instalado en las siete páginas con los fragmentos de `head` y `body`; `node scripts/configurar-gtm.js GTM-W6FRFP9K` reproduce esa instalación. Su funcionamiento y las etiquetas publicadas dentro del contenedor requieren prueba con Tag Assistant. El archivo HTML de verificación de Search Console está en la raíz y debe permanecer allí; Nico verificó la propiedad en Search Console.
 
